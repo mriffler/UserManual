@@ -8,6 +8,10 @@ See [Getting Started Guide](https://docs.readthedocs.io/en/latest/getting_starte
  
 *TBD* - put the most important pieces here.
 
+## Editing
+
+### reST Format Documentation
+http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
 
 ## Versioning
 See [Versions Guide](https://docs.readthedocs.io/en/latest/versions.html)
