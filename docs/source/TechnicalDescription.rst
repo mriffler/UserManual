@@ -9,7 +9,7 @@ Technical Description
 "Best" Pixel Approach
 *********************
 
-L2A Product Preperation
+L2A Product Preparation
 ***********************
 
 Algorithms

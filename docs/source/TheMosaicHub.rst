@@ -20,7 +20,7 @@ Compositing Periods
 Area Selection
 --------------
 
-Order Preperation
+Order Preparation
 -----------------
 
 Time Series
