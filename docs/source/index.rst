@@ -3,18 +3,29 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to S2GM User Manual!
-============================
+################################
+Welcome to the S2GM User Manual!
+################################
+
+
+Table of Contents
+*****************
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+    :numbered:
+    :maxdepth: 2
 
-
+    Introduction
+    TheMosaicHub
+    TechnicalDescription
+    ProductGuide
+    LimitationsAndExtensions
+    Glossary
+    References
+    Appendix
 
 Indices and tables
-==================
+******************
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
