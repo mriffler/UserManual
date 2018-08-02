@@ -24,9 +24,9 @@ copyright = '2018, Brockmann Consult GmbH, Sinergise LTD., GeoVille GmbH'
 author = 'Brockmann Consult GmbH, Sinergise LTD., GeoVille GmbH'
 
 # The short X.Y version
-version = '0.2'
+version = '0.3'
 # The full version, including alpha/beta/rc tags
-release = '0.2Dev'
+release = '0.3Dev'
 
 
 # -- General configuration ---------------------------------------------------
