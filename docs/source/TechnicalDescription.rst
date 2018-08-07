@@ -2,8 +2,16 @@
 Technical Description
 #####################
 
-.. attention::
-   The content needs to be provided!
+The mosaic processing is organized in two distinct modules (see Figure #):
+
+- the pre-processing module
+- and a combined mosaicking module based on Medoid and Short-Term Composite approaches.
+
+A threshold related to the number of valid observations is defined and applied in the processing chain for the selection of the mosaicking approach. In case of sufficient valid observations, the Medoid approach is selected otherwise the Short-Term composite is chosen. The threshold has been set to 4 for Mosaics V1.
+
+**Figure #: Processing chain - main steps**
+
+.. image:: MosaickingScheme.png
 
 
 "Best" Pixel Approach
