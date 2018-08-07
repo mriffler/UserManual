@@ -88,7 +88,7 @@ The products provide information on the validity of an observation (pixel).
 +--------------------+-----------------------------------------------+--------+
 | Band name          |  Description                                  | Unit   |
 +====================+===============================================+========+
-| source_index       | Index of the product used for this pixel. See | dl     |
+| source_index       | Index of the product used for this pixel. See | None   |
 |                    | 'SourceProductIndices' element in metadata.   |        |
 +--------------------+-----------------------------------------------+--------+
 
