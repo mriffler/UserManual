@@ -43,18 +43,68 @@ All products additionally provide quality indicator bands.
 +------------------------------+------------------------------------------------+------+
 | Band name                    |  Description                                   | Unit |
 +==============================+================================================+======+
-| quality_aot                  | Aerosol Optical Thickness (AOT)                | %    |
+| quality_aot                  | Aerosol Optical Thickness (AOT)                | None |
 +------------------------------+------------------------------------------------+------+
-| quality_cloud_confidence     | Ranging from 0 for high confidence no snow/ice | %    |
-|                              | to 100 for high confidence snow/ice.           | None |
+| quality_cloud_confidence     | Ranging from 0 for high confidence clear sky   | %    |
+|                              | to 100 for high confidence cloudy.             |      |
 +------------------------------+------------------------------------------------+------+
-| quality_scene_classification | Scene classification map                       | %    |
-|                              | (see Figure # & Table ##)                      | None |
+| quality_snow_confidence      | Ranging from 0 for high confidence no snow/ice | %    |
+|                              | to 100 for high confidence snow/ice.           |      |
++------------------------------+------------------------------------------------+------+
+| quality_scene_classification | Scene classification map                       | None |
+|                              | (see Figure # & Table ##)                      |      |
 +------------------------------+------------------------------------------------+------+
 
 **Figure #: Scene classification map classes**
 
 .. image:: ClassificationMap.png
+
+The following figure gives an example of an applied classification map:
+
+**Figure #: Scene classification map example**
+
+.. image:: SceneClassificationMapExample.png
+
+The products provide view and sun geometry information.
+
+**Table #: View and sun geometry bands**
+
++--------------------+--------------------------------------+--------+
+| Band name          |  Description                         | Unit   |
++====================+======================================+========+
+| view_zenith_mean   | Mean view zenith angle of all bands  | Degree |
++--------------------+--------------------------------------+--------+
+| view_azimuth_mean  | Mean view azimuth angle of all bands | Degree |
++--------------------+--------------------------------------+--------+
+| sun_zenith         | Sun zenith angle                     | Degree |
++--------------------+--------------------------------------+--------+
+| sun_azimuth        | Sun azimuth angle                    | Degree |
++--------------------+--------------------------------------+--------+
+
+The products provide information on the validity of an observation (pixel).
+
+**Table #: Validation bands**
+
++--------------------+-----------------------------------------------+--------+
+| Band name          |  Description                                  | Unit   |
++====================+===============================================+========+
+| source_index       | Index of the product used for this pixel. See | dl     |
+|                    | 'SourceProductIndices' element in metadata.   |        |
++--------------------+-----------------------------------------------+--------+
+
+Finally, a quality measure for the Medoid compositing algorithm is included.
+
+**Table#: Medoid quality band**
+
++------------+-----------------------------------------------+--------+
+| Band name  |  Description                                  | Unit   |
++============+===============================================+========+
+| medoid_mos | The measure of spread of the medoid algorithm.| None   |
+|            | Defined as sum of distances divided by number |        |
+|            | of observations.                              |        |
++------------+-----------------------------------------------+--------+
+
+The products additionally hold two bands with latitude and longitude information.
 
 INSPIRE
 *******
