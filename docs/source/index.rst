@@ -29,3 +29,12 @@ Indices and tables
 
 * :ref:`genindex`
 * :ref:`search`
+
+
+Playarea
+********
+.. toctree::
+    :numbered:
+    :maxdepth: 1
+
+    Play
