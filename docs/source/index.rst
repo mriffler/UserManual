@@ -17,7 +17,7 @@ Table of Contents
 
     Introduction
     TheMosaicHub
-    TechnicalDescription
+    MosaickingAlgorithms
     ProductGuide
     LimitationsAndExtensions
     Glossary

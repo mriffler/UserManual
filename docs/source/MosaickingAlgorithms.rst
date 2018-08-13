@@ -1,6 +1,9 @@
 #####################
-Technical Description
+Mosaicking Algorithms
 #####################
+
+.. note::
+   The content needs to be provided/edited by GK
 
 The mosaic processing is organized in two distinct modules (see :numref:`mosaickingScheme`):
 
@@ -14,10 +17,10 @@ A threshold related to the number of valid observations is defined and applied i
 .. figure:: MosaickingScheme.png
    :name: mosaickingSchemeName
    :scale: 80%
-   :alt: Processing chain - main steps
+   :alt: Mosaicking Scheme
    :align: center
 
-   Processing chain - main steps
+   Mosaicking Scheme
 
 "Best" Pixel Approach
 *********************
