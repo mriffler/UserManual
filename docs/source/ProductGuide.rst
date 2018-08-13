@@ -52,18 +52,31 @@ All products additionally provide quality indicator bands.
 |                              | to 100 for high confidence snow/ice.           |      |
 +------------------------------+------------------------------------------------+------+
 | quality_scene_classification | Scene classification map                       | None |
-|                              | (see Figure # & Table ##)                      |      |
+|                              | (see :numref:`sceneClassifMap` & Table ##)     |      |
 +------------------------------+------------------------------------------------+------+
 
-**Figure #: Scene classification map classes**
 
-.. image:: ClassificationMap.png
+.. _sceneClassifMap:
+.. figure:: ClassificationMap.png
+   :name: ClassificationMapClassesName
+   :scale: 100%
+   :alt: Scene classification map classes
+   :align: center
+
+   Scene classification map classes
+
 
 The following figure gives an example of an applied classification map:
 
-**Figure #: Scene classification map example**
 
-.. image:: SceneClassificationMapExample.png
+.. _sceneClassifMapExample:
+.. figure:: SceneClassificationMapExample.png
+   :name: SceneClassificationMapExample
+   :scale: 100%
+   :alt: Scene classification map example
+   :align: center
+
+   Scene classification map example
 
 The products provide view and sun geometry information.
 
