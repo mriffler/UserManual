@@ -76,6 +76,33 @@ When you launch the App, you will see a window like in :numref:`mosaicDownloader
 
    Mosaic Downloader App Window (Sentinel view)
 
+The menu of the App has menu buttons in the top; clicking on them brings up the following functionality:
+
++------------------------+------------------+
+| Menu Button            |  Functionality   |
++========================+==================+
+| Home                   | TBD              |
++------------------------+------------------+
+| User Manual            | This document    |
++------------------------+------------------+
+| User Area              | Status of Orders |
++------------------------+------------------+
+| Mosaic Hub             | Configuration    |
+|                        | of Mosaics       |
++------------------------+------------------+
+| Time Series            | Configuration    |
+|                        | of Time Series   |
++------------------------+------------------+
+| Mosaic Downloader      | Configuration    |
+|                        | and Execution    |
+|                        | of Downloads     |
++------------------------+------------------+
+| Resources              | TBD              |
++------------------------+------------------+
+| About S2GM             | TBD              |
++------------------------+------------------+
+
+
 The App Window is separated vertically with the dynamic map on the right and the temporal and spatial
 configuration options on the left. Users can scroll and zoom into the map to focus on an area of interest.
 There are different options to define the area for which the mosaic product will be generated:
@@ -86,11 +113,25 @@ There are different options to define the area for which the mosaic product will
 * Selection of a pre-defined area, i.e. a country or a continent, in the dropdown menus of the configuration menu.
 
 
-Compositing Periods
--------------------
 
 Area Selection
 --------------
+
+
+Compositing Periods
+-------------------
+The definition of the compositing period is done in the temporal period section of the configuration menu. There are five different compositing lengths to choose from: year, season, month, 10-day, day. For each of these compositing lengths, pre-defined periods can be selected by selecting the desired option in the corresponding tabs (see ).
+
+.. _compositing10Days:
+.. figure:: Compositing10Days.png
+   :name: compositing10DaysName
+   :scale: 50%
+   :alt: Compositing Dialog (10 days)
+   :align: center
+
+   Compositing Dialog (10 days)
+
+Once area of interest and compositing period have been selected, users must define further properties in the Order Panel dialogue.
 
 Order Preparation
 -----------------
