@@ -24,7 +24,6 @@ The S2GM processing chain to calculate the mosaic image products is fully automa
    :align: center
 
    Processing chain - main steps
-   :numref:`processingChain`
 
 S2GM Project
 ************
