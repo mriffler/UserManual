@@ -5,7 +5,21 @@ Introduction
 .. note::
    The content needs to be provided/edited by GB
 
-The objective of the S2GM service is the provision of mosaic surface reflectance products derived from Sentinel-2 A and B platforms. Input to the processing are Level 2A products provided by the Copernicus Ground Segment, i.e. ESA Sentinel 2 core products. The S2GM service will generate regional and temporal composites at global scale and produced on-demand over specific areas of interest. The generated products will directly support international policy agreements to which the EU committed, e.g., the Paris agreement of the United Nations Framework Convention on Climate Change (UNFCC) and its activities for Reducing Emissions from Deforestation and forest Degradation (REDD+). These mosaicked surface reflectance products shall serve as input to further thematic processing, i.e. the generation of higher level products, and analyses. Thus, the overarching requirement for the mosaicking is the selection of the most representative spectrum for a given pixel, selected from the set of observations made during the temporal compositing period and to provide this information as Analysis Ready Dataset (ARD).
+The Sentinel-2 Global Mosaic service offers mosaic surface reflectance products derived from Sentinel-2 A and B platforms.
+Input to the processing are the Level 2A products provided by the Copernicus Ground Segment, i.e. ESA Sentinel-2 core products.
+The S2GM service generates regional and temporal composites at global scale and produced on-demand over specific areas of interest.
+Mosaics consist of best representative spectra for given pixel location and compositing period, ensuring the consistency of spectra and thus the radiometric quality of the products.
+Users of the Sentinel-2 Global Mosaic service benefit from a convenient configuration and request process in the Mosaic Hub,
+the powerful user interface to the service, and the analysis-ready products, which allow for instant further thematic processing.
+
+This User Manual
+
+The generated products will directly support international policy agreements to which the EU committed,
+e.g., the Paris agreement of the United Nations Framework Convention on Climate Change (UNFCC) and its activities for Reducing Emissions from
+Deforestation and forest Degradation (REDD+). These mosaicked surface reflectance products shall serve as input to further thematic processing,
+ i.e. the generation of higher level products, and analyses. Thus, the overarching requirement for the mosaicking is the selection of the most
+  representative spectrum for a given pixel, selected from the set of observations made during the temporal compositing period and to provide
+  this information as Analysis Ready Dataset (ARD).
 
 The Sentinel-2 mission includes a twin-satellite constellation covering all Earth’s land surfaces, large islands, inland and coastal waters every five days at the equator with even higher observation frequencies in mid- and high-latitude regions with the primary aim to support the monitoring of vegetation, land cover, and the environment in general. The Sentinel-2 Multispectral Instrument (MSI) provides multi-spectral information from 13 spectral bands ranging from visible and near-infrared to shortwave infrared wavelengths along a 290-km orbital swath. The MSI sensor data are complementary to data acquired by the U.S. Geological Survey Landsat 8 Operational Land Imager and Landsat 7 Enhanced Thematic Mapper Plus. Sentinel-2A was launched in June 2015 and Sentinel-2B in April 2017.
 
@@ -26,17 +40,8 @@ The S2GM processing chain to calculate the mosaic image products is fully automa
    Processing chain - main steps
    :numref:`processingChain`
 
-S2GM Project
-************
 
-Motivation
-==========
 
-Scope
-=====
-
-Team
-====
 
 Organisation of the Manual
 **************************
@@ -44,5 +49,5 @@ Organisation of the Manual
 Problem Reporting
 *****************
 
-Webinterface + Software Installation
+How to get access to Sentinel-2 Mosaics?
 ************************************

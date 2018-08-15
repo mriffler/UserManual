@@ -2,7 +2,7 @@
 #
 
 # You can set these variables from the command line.
-SPHINXOPTS    =
+SPHINXOPTS    = todo_include_todos = True
 SPHINXBUILD   = sphinx-build
 SPHINXPROJ    = S2GMUserManual
 SOURCEDIR     = source
