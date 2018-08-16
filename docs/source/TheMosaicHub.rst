@@ -144,7 +144,7 @@ Quarter
    :name: compositingQuarterName
    :scale: 50%
    :alt: Compositing Dialog (Quarter)
-   :align: center
+   :align: left
 
    Compositing Dialog (Quarter)
 
