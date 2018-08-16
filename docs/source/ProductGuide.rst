@@ -59,7 +59,7 @@ All products additionally provide quality indicator bands.
 
 
 .. _sceneClassifMap:
-.. figure:: ClassificationMap.png
+.. figure:: pages/images/ClassificationMap.png
    :name: ClassificationMapClassesName
    :scale: 100%
    :alt: Scene classification map classes

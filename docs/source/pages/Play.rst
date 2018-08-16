@@ -6,7 +6,7 @@ Playbook
    Please check me ASAP.
 
 .. _classificationMap:
-.. figure:: ClassificationMap.png
+.. figure:: images/ClassificationMap.png
    :name: classificationMapName
    :scale: 80%
    :alt: table of scene classification
