@@ -120,8 +120,45 @@ Area Selection
 
 Compositing Periods
 -------------------
-The definition of the compositing period is done in the temporal period section of the configuration menu. There are five different compositing lengths to choose from: year, season, month, 10-day, day. For each of these compositing lengths, pre-defined periods can be selected by selecting the desired option in the corresponding tabs (see ).
+The definition of the compositing period is done in the temporal period section of the configuration menu. There are five different compositing lengths to choose from: year, season, month, 10-day, day. For each of these compositing lengths, pre-defined periods can be selected by selecting the desired option in the corresponding tabs.
 
+Year
+^^^^
+.. _compositingYear:
+.. figure:: CompositingPeriodYear.png
+   :name: compositingYearName
+   :scale: 50%
+   :alt: Compositing Dialog (Year)
+   :align: center
+
+   Compositing Dialog (Year)
+
+
+Quarter
+^^^^^^^
+.. _compositingQuarter:
+.. figure:: CompositingPeriodQuarter.png
+   :name: compositingQuarterName
+   :scale: 50%
+   :alt: Compositing Dialog (Quarter)
+   :align: center
+
+   Compositing Dialog (Quarter)
+
+Month
+^^^^^
+
+.. _compositingMonth:
+.. figure:: CompositingPeriodMonth.png
+   :name: compositingMonthName
+   :scale: 50%
+   :alt: Compositing Dialog (Month)
+   :align: center
+
+   Compositing Dialog (Month)
+
+Ten Days
+^^^^^^^^
 .. _compositing10Days:
 .. figure:: Compositing10Days.png
    :name: compositing10DaysName
@@ -130,6 +167,18 @@ The definition of the compositing period is done in the temporal period section 
    :align: center
 
    Compositing Dialog (10 days)
+
+Day
+^^^
+
+.. _compositingDay:
+.. figure:: CompositingPeriodDay.png
+   :name: compositingDayName
+   :scale: 50%
+   :alt: Compositing Dialog (Day)
+   :align: center
+
+   Compositing Dialog (Day)
 
 Once area of interest and compositing period have been selected, users must define further properties in the Order Panel dialogue.
 
