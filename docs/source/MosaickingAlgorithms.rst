@@ -1,3 +1,5 @@
+.. _mosaic_algos:
+
 #####################
 Mosaicking Algorithms
 #####################

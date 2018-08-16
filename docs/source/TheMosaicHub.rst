@@ -1,6 +1,9 @@
+.. _mosaic_hub:
+
 ##############
 The Mosaic Hub
 ##############
+
 
 .. note::
    The content will be provided by UK

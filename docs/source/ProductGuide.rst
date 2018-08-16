@@ -1,3 +1,5 @@
+.. _prod_guide:
+
 #############
 Product Guide
 #############

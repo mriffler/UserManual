@@ -1,9 +1,9 @@
+.. _intro:
+
 ############
 Introduction
 ############
 
-.. note::
-   The content needs to be provided/edited by GB
 
 The Sentinel-2 Global Mosaic service offers mosaic surface reflectance products derived from Sentinel-2 A and B platforms.
 Input to the processing are the Level 2A products provided by the Copernicus Ground Segment, i.e. ESA Sentinel-2 core products.
@@ -12,41 +12,13 @@ Mosaics consist of best representative spectra for given pixel location and comp
 Users of the Sentinel-2 Global Mosaic service benefit from a convenient configuration and request process in the Mosaic Hub,
 the powerful user interface to the service, and the analysis-ready products, which allow for instant further thematic processing.
 
-This User Manual
+This manual enables new users of the Sentinel-2 Global Mosaic to fully exploit the capabilities of the service.
+It contains a guide on the usage of :ref:`mosaic_hub`, an overview of the :ref:`mosaic_algos` used to generate mosaics, and a :ref:`prod_guide`,
+which elaborates on content, format, and usage of the mosaics. In addition to this User Manual, expert users are referred to the
+Algorithm Theoretical Baseline Document (ATBD) available on the `S2GM website <https://s2gm.sentinel-hub.com/node/3>`_.
 
-The generated products will directly support international policy agreements to which the EU committed,
-e.g., the Paris agreement of the United Nations Framework Convention on Climate Change (UNFCC) and its activities for Reducing Emissions from
-Deforestation and forest Degradation (REDD+). These mosaicked surface reflectance products shall serve as input to further thematic processing,
- i.e. the generation of higher level products, and analyses. Thus, the overarching requirement for the mosaicking is the selection of the most
-  representative spectrum for a given pixel, selected from the set of observations made during the temporal compositing period and to provide
-  this information as Analysis Ready Dataset (ARD).
-
-The Sentinel-2 mission includes a twin-satellite constellation covering all Earth’s land surfaces, large islands, inland and coastal waters every five days at the equator with even higher observation frequencies in mid- and high-latitude regions with the primary aim to support the monitoring of vegetation, land cover, and the environment in general. The Sentinel-2 Multispectral Instrument (MSI) provides multi-spectral information from 13 spectral bands ranging from visible and near-infrared to shortwave infrared wavelengths along a 290-km orbital swath. The MSI sensor data are complementary to data acquired by the U.S. Geological Survey Landsat 8 Operational Land Imager and Landsat 7 Enhanced Thematic Mapper Plus. Sentinel-2A was launched in June 2015 and Sentinel-2B in April 2017.
-
-Input to the mosaicking process are surface reflectance values, from the so-called Level 2A product. Level 2As are operationally produced by the Copernicus (ESA) ground segment. Currently ESA is using the Sen2Cor atmospheric correction processor for the generation of Level 2A products. These Level 2A contain directional surface reflectances in 10 spectral bands (i.e. not BRDF corrected), a scene classification layer (SCL) providing information on cloudiness, snow and other pixel classification information, as well as aerosol and water vapour used during the atmospheric correction process. The S2GM mosaicking algorithm has to rely on this information for its processing.
-
-The S2GM processing chain to calculate the mosaic image products is fully automated and is based on a modular design - see Figure #. The three following main modules form the basis of the chain.
-1.	Quality assurance/ quality check (QA/QC) of the input products
-2.	Composite/Mosaic algorithm
-3.	Quality assurance/ quality check (QA/QC) of the input products
+For any questions that remain unanswered by this document or any other issues S2GM users are kindly
+referred to the `User Support <https://s2gm.sentinel-hub.com/node/6>`_. We are keen to learn more about your experiences to
+further improve the Sentinel-2 Global Mosaic service!
 
 
-.. _processingChain:
-.. figure:: ProcessingChain.png
-   :name: processingChainName
-   :alt: Processing chain - main steps
-   :align: center
-
-   Processing chain - main steps
-
-
-
-
-Organisation of the Manual
-**************************
-
-Problem Reporting
-*****************
-
-How to get access to Sentinel-2 Mosaics?
-************************************
