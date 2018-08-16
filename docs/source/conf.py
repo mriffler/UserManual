@@ -41,6 +41,7 @@ release = '0.4Dev'
 extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
+    'sphinx.ext.todo',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -162,7 +163,3 @@ texinfo_documents = [
 numfig = True
 numfig_secnum_depth = 1 # (default) numbers will be x.1, x.2, …
                         # with x the section number
-
-# -- Extension configuration -------------------------------------------------
-
-extensions = ['sphinx.ext.todo']
