@@ -37,4 +37,4 @@ Playarea
     :numbered:
     :maxdepth: 1
 
-    Play
+    pages/Play
