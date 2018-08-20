@@ -15,7 +15,7 @@ The front-end guides the user through the process of this product specification.
 
 Registration
 ************
-For the registration process, guide your browser to: https://services.sentinel-hub.com/oauth/subscription
+For the registration process, guide your browser to the `Subscription Page <https://services.sentinel-hub.com/oauth/subscription>`_.
 After you have filled out the form (see :numref:`mosaicHubRegistration`), you will receive an e-mail to confirm your
 mail address. Click on the verification button and you will receive the confirmation that your account has been created.
 
@@ -33,12 +33,12 @@ mail address. Click on the verification button and you will receive the confirma
 Mosaic Ordering
 ***************
 This page describes the process of ordering  mosaics, from defining the conditions to the download of the processed product.
-The ordering of Time Series are described below.
+The ordering of :ref:`time_series` is described below.
 
 Mosaic Hub
 ==========
 
-The Mosaic Hub is located here: https://webdev.sentinel-hub.com/mosaic-hub/#/
+The Mosaic Hub is located `here <https://webdev.sentinel-hub.com/mosaic-hub/#/>`_.
 
 However, in order to download the processed products, you will have to install the "Mosaic Downloader" App.
 In fact, this App has the same functionality like the browser instance. In order to not have to switch between browser and
@@ -123,7 +123,11 @@ Area Selection
 
 Compositing Periods
 -------------------
-The definition of the compositing period is done in the temporal period section of the configuration menu. There are five different compositing lengths to choose from: year, season, month, 10-day, day. For each of these compositing lengths, pre-defined periods can be selected by selecting the desired option in the corresponding tabs.
+The definition of the compositing period is done in the temporal period section of the configuration menu.
+There are five different compositing lengths to choose from: year, season, month, 10-day, day.
+For each of these compositing lengths, pre-defined periods can be selected by choosing the desired option in the corresponding tabs.
+Unavailable periods are disabled and marked in grey colour. In the 10-day and the day tabs, one can select months and years
+from drop-down lists. The forward and backward scrolling can be done by clicking on the arrow symbol.
 
 Year
 ^^^^
@@ -136,6 +140,7 @@ Year
 
    Compositing Dialog (Year)
 
+As it can be seen in :numref:`compositingYear`, one can select a complete year as compositing period by clicking on it.
 
 Quarter
 ^^^^^^^
@@ -144,9 +149,11 @@ Quarter
    :name: compositingQuarterName
    :scale: 50%
    :alt: Compositing Dialog (Quarter)
-   :align: left
+   :align: center
 
    Compositing Dialog (Quarter)
+
+Select a three-month period by clicking on the buttons Q1-Q4 (:numref:`compositingQuarter`).
 
 Month
 ^^^^^
@@ -160,6 +167,8 @@ Month
 
    Compositing Dialog (Month)
 
+The selection of the desired month as compositing period is straightforward (:numref:`compositingMonth`).
+
 Ten Days
 ^^^^^^^^
 .. _compositing10Days:
@@ -170,6 +179,10 @@ Ten Days
    :align: center
 
    Compositing Dialog (10 days)
+
+The definition of a ten-days period is bound to pre-defined, fixed intervals.
+The latter are displayed on the specific tab. Start- and end-days are marked in dark green,
+the intermediate values in light green (see :numref:`compositing10Days`). Clicking on either day in the interval yields the same result.
 
 Day
 ^^^
@@ -183,12 +196,15 @@ Day
 
    Compositing Dialog (Day)
 
+The selection of the desired month as compositing period is straightforward (:numref:`compositingDay`).
+
 Once area of interest and compositing period have been selected, users must define further properties in the Order Panel dialogue.
 
 Order Preparation
 -----------------
 
 
+.. _time_series:
 
 Time Series
 ===========
