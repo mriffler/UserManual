@@ -9,8 +9,10 @@ The Mosaic Hub
    The content will be provided by UK
 
 The Mosaic Hub front-end is the main tool for S2GM users.
-It allows for the specification of S2GM products in terms of the spatial extent as well as the compositing period and the format of the output products.
-The front-end guides the user through the process of this product specification. A registration is required before requesting and downloading mosaics.
+It allows for the specification of S2GM products in terms of the spatial extent as well as the compositing period
+and the format of the output products.
+The front-end guides the user through the process of this product specification.
+A registration is required before requesting and downloading mosaics.
 
 
 Registration
@@ -108,17 +110,46 @@ The menu of the App has menu buttons in the top; clicking on them brings up the 
 
 The App Window is separated vertically with the dynamic map on the right and the temporal and spatial
 configuration options on the left. Users can scroll and zoom into the map to focus on an area of interest.
-There are different options to define the area for which the mosaic product will be generated:
-
-* Drawing a rectangular on the map after selecting the corresponding icon in the menu on the upper right of the map.
-* Drawing a polygon of arbitrary geometry after selecting the corresponding icon in the menu on the upper right of the map.
-* Uploading a kml or kmz shape file. The upload button is located on the second tab in the area selection menu of the configuration menu.
-* Selection of a pre-defined area, i.e. a country or a continent, in the dropdown menus of the configuration menu.
-
 
 
 Area Selection
 --------------
+
+.. _areaSelection:
+.. figure:: AreaSelection.png
+   :name: areaSelectionName
+   :scale: 100%
+   :alt: Area Selection
+   :align: center
+
+   Area Selection
+
+As depicted in :numref:`Fig. {number}: {name} <areaSelection>`, there are different options to define the area for which the mosaic product will be generated:
+
+
+
+* Drawing a rectangular or a polygon of arbitrary geometry on the map after selecting the corresponding icon in the menu on the upper right of the map (see :numref:`drawingTools`).
+* Uploading a kml or kmz shape file. The upload button is located on the second tab in the area selection menu of the configuration menu.
+* Selection of a pre-defined area, i.e. a country or a continent, in the dropdown menus of the configuration menu.
+* Entering the area boundaries in WKT format (see :numref:`Fig. {number}: {name} <WKT>`.
+  Note that in WKT the first and last co-ordinates must be identical to close the polygon.
+
+
+.. _drawingTools:
+.. figure:: DrawingTools.png
+   :name: drawingToolsName
+   :alt: Drawing Tools
+   :align: center
+
+   Drawing Tools
+
+.. _WKT:
+.. figure:: WKT.png
+   :name: wktName
+   :alt: WKT Example
+   :align: center
+
+   WKT Example
 
 
 Compositing Periods
@@ -129,8 +160,6 @@ For each of these compositing lengths, pre-defined periods can be selected by ch
 Unavailable periods are disabled and marked in grey colour. In the 10-day and the day tabs, one can select months and years
 from drop-down lists. The forward and backward scrolling can be done by clicking on the arrow symbol.
 
-Year
-^^^^
 .. _compositingYear:
 .. figure:: CompositingPeriodYear.png
    :name: compositingYearName
@@ -142,8 +171,6 @@ Year
 
 As it can be seen in :numref:`compositingYear`, one can select a complete year as compositing period by clicking on it.
 
-Quarter
-^^^^^^^
 .. _compositingQuarter:
 .. figure:: CompositingPeriodQuarter.png
    :name: compositingQuarterName
@@ -155,8 +182,6 @@ Quarter
 
 Select a three-month period by clicking on the buttons Q1-Q4 (:numref:`compositingQuarter`).
 
-Month
-^^^^^
 
 .. _compositingMonth:
 .. figure:: CompositingPeriodMonth.png
@@ -169,8 +194,6 @@ Month
 
 The selection of the desired month as compositing period is straightforward (:numref:`compositingMonth`).
 
-Ten Days
-^^^^^^^^
 .. _compositing10Days:
 .. figure:: Compositing10Days.png
    :name: compositing10DaysName
@@ -184,9 +207,6 @@ The definition of a ten-days period is bound to pre-defined, fixed intervals.
 The latter are displayed on the specific tab. Start- and end-days are marked in dark green,
 the intermediate values in light green (see :numref:`compositing10Days`). Clicking on either day in the interval yields the same result.
 
-Day
-^^^
-
 .. _compositingDay:
 .. figure:: CompositingPeriodDay.png
    :name: compositingDayName
@@ -199,9 +219,7 @@ Day
 The selection of the desired month as compositing period is straightforward (:numref:`compositingDay`).
 
 Once area of interest and compositing period have been selected, users must define further properties in the Order Panel dialogue.
-
-Order Preparation
------------------
+Click on "**PREPARE DOWNLOAD**" to enter the Order Panel (see ).
 
 
 .. _time_series:
