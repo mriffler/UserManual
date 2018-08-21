@@ -9,7 +9,10 @@ General
 
 All products provide surface reflectance in eleven bands. The surface reflectance is computed using the “Sentinel-2 Atmospheric Correction” (L2A_AtmCorr) algorithm and based on reference radiative transfer code. Look Up Tables (LUTs) are based on LibRadtran.
 
-**Table #: Surface reflectance bands**
+.. _surface_reflectance_bands:
+
+Surface reflectance bands
+=========================
 
 +------------------------+-----------------+---------------+
 | Band name              |  Central        | Spatial       |
@@ -37,6 +40,8 @@ All products provide surface reflectance in eleven bands. The surface reflectanc
 +------------------------+-----------------+---------------+
 | B12                    | 2190            | 20            |
 +------------------------+-----------------+---------------+
+
+.. _quality_indicator_bands:
 
 All products additionally provide quality indicator bands.
 
@@ -81,6 +86,8 @@ The following figure gives an example of an applied classification map:
    Scene classification map example
 
 The products provide view and sun geometry information.
+
+.. _view_sun_geometry_bands:
 
 **Table #: View and sun geometry bands**
 

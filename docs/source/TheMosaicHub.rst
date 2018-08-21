@@ -126,7 +126,7 @@ Area Selection
 
 As depicted in :numref:`Fig. {number}: {name} <areaSelection>`, there are different options to define the area for which the mosaic product will be generated:
 
-
+Note that your product might be split into several tiles if it spans a large area (see also the warning displayed on :numref:`orderPanelOrder`).
 
 * Drawing a rectangular or a polygon of arbitrary geometry on the map after selecting the corresponding icon in the menu on the upper right of the map (see :numref:`drawingTools`).
 * Uploading a kml or kmz shape file. The upload button is located on the second tab in the area selection menu of the configuration menu.
@@ -218,9 +218,61 @@ the intermediate values in light green (see :numref:`compositing10Days`). Clicki
 
 The selection of the desired month as compositing period is straightforward (:numref:`compositingDay`).
 
-Once area of interest and compositing period have been selected, users must define further properties in the Order Panel dialogue.
-Click on "**PREPARE DOWNLOAD**" to enter the Order Panel (see ).
+.. _orderPanel:
 
+Once area of interest and compositing period have been selected, users must define further properties in the Order Panel dialogue.
+Click on "**PREPARE DOWNLOAD**" to enter the Order Panel. You will have to walk through four tabs and make your choices.
+On the last tab, you will be able to resume your selections. In the first tab the data format has to be defined (see :numref:`orderPanelData`).
+
+.. _orderPanelData:
+.. figure:: OrderPanelData.png
+   :name: orderPanelDataName
+   :scale: 50%
+   :alt: Order Panel (Data format)
+   :align: center
+
+   Order Panel (Data format)
+
+Make your choice and click on "**Next**". This brings you to the next tab of the Order Panel.
+Here you can select the bands that shall be included in the product (see also :ref:`prod_guide`).
+Apart from the surface reflectance bands, additional bands can be selected under "**Advanced Settings**" (see :numref:`orderPanelBands`).
+
+.. _orderPanelBands:
+.. figure:: OrderPanelBands.png
+   :name: orderPanelBandsName
+   :scale: 50%
+   :alt: Order Panel (Band selection)
+   :align: center
+
+   Order Panel (Bands)
+
+Click on "**Next**". The next page is used to assign a name to your specific order (:numref:`orderPanelOrder`).
+Assign the name in such a way that it is as meaningful as possible. This way you will be able to distinguish your processings better later on.
+
+.. _orderPanelOrder:
+.. figure:: OrderPanelOrder.png
+   :name: orderPanelOrderName
+   :scale: 50%
+   :alt: Order Panel (Order information)
+   :align: center
+
+   Order Panel (Order information)
+
+Note that
+
+Click on "**Next**". You will get to the last page (see :numref:`orderPanelConfirmOrder`).
+As mentioned before, you are now able to review your decisions and make changes if necessary.
+
+.. _orderPanelConfirmOrder:
+.. figure:: OrderPanelConfirmOrder.png
+   :name: orderPanelConfirmOrderName
+   :scale: 50%
+   :alt: Order Panel (Confirm Order)
+   :align: center
+
+   Order Panel (Confirm Order)
+
+If everything is correct, click on "**Generate**".
 
 .. _time_series:
 
