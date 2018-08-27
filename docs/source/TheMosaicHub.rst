@@ -279,6 +279,30 @@ If everything is correct, click on "**Generate**".
 Time Series
 ===========
 
+The definition of a time series is very similar to the definition of a mosaic.
+A click on the button "**Time Series**" brings up the following page (see :numref:`timeSeriesDialog`):
+
+.. _timeSeriesDialog:
+.. figure:: pages/images/TimeSeriesDialog.png
+   :name: TimeSeriesDialogName
+   :scale: 50%
+   :alt: Time Series Dialog Page
+   :align: center
+
+   Time Series Dialog Page
+
+
+.. _timeSeriesPixels:
+.. figure:: pages/images/TimeSeriesPixels.png
+   :name: TimeSeriesPixelsName
+   :scale: 100%
+   :alt: Time Series Pixels
+   :align: center
+
+   Time Series Pixels
+
+
+
 Compositing Periods
 -------------------
 
