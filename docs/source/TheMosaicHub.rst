@@ -301,6 +301,35 @@ A click on the button "**Time Series**" brings up the following page (see :numre
 
    Time Series Pixels
 
+.. _timeSeriesGenerated:
+.. figure:: pages/images/TimeSeriesGenerated.png
+   :name: TimeSeriesGeneratedName
+   :scale: 50%
+   :alt: Time Series Generated Message
+   :align: center
+
+   Time Series Generated Message
+
+
+.. _timeSeriesHover:
+.. figure:: pages/images/TimeSeriesHover.png
+   :name: TimeSeriesHoverName
+   :scale: 50%
+   :alt: Time Series Hover Display
+   :align: center
+
+   Time Series Hover Display
+
+
+
+.. _timeSeriesData:
+.. figure:: pages/images/TimeSeriesData.png
+   :name: TimeSeriesDataName
+   :scale: 50%
+   :alt: Time Series Data
+   :align: center
+
+   Time Series Data
 
 
 Compositing Periods
