@@ -77,7 +77,7 @@ The following figure gives an example of an applied classification map:
 
 
 .. _sceneClassifMapExample:
-.. figure:: SceneClassificationMapExample.png
+.. figure:: pages/images/SceneClassificationMapExample.png
    :name: SceneClassificationMapExample
    :scale: 100%
    :alt: Scene classification map example

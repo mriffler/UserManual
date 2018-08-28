@@ -22,7 +22,7 @@ After you have filled out the form (see :numref:`mosaicHubRegistration`), you wi
 mail address. Click on the verification button and you will receive the confirmation that your account has been created.
 
 .. _mosaicHubRegistration:
-.. figure:: MosaicHubRegistration.png
+.. figure:: images/MosaicHubRegistration.png
    :name: mosaicHubRegistrationName
    :scale: 50%
    :alt: Mosaic Hub Registration
@@ -52,7 +52,7 @@ Mosaic Downloader
 In the Mosaic Hub, click on the drop-down menu item "Mosaic Downloader" like in :numref:`mosaicDownloaderMenu`.
 
 .. _mosaicDownloaderMenu:
-.. figure:: MosaicDownloaderMenu.png
+.. figure:: images/MosaicDownloaderMenu.png
    :name: mosaicDownloaderMenuName
    :scale: 50%
    :alt: Mosaic Downloader Menu Item
@@ -64,7 +64,7 @@ From there, you are able to download the App for your specific OS, or even launc
 When you launch the App, you will see a window like in :numref:`mosaicDownloaderAppBase`.
 
 .. _mosaicDownloaderAppBase:
-.. figure:: MosaicDownloaderAppBase.png
+.. figure:: images/MosaicDownloaderAppBase.png
    :name: mosaicDownloaderAppBaseName
    :scale: 50%
    :alt: Mosaic Downloader App Window (Base view)
@@ -73,7 +73,7 @@ When you launch the App, you will see a window like in :numref:`mosaicDownloader
    Mosaic Downloader App Window (Base view)
 
 .. _mosaicDownloaderAppS2:
-.. figure:: MosaicDownloaderAppS2.png
+.. figure:: images/MosaicDownloaderAppS2.png
    :name: mosaicDownloaderAppS2Name
    :scale: 50%
    :alt: Mosaic Downloader App Window (Sentinel view)
@@ -116,7 +116,7 @@ Area Selection
 --------------
 
 .. _areaSelection:
-.. figure:: AreaSelection.png
+.. figure:: images/AreaSelection.png
    :name: areaSelectionName
    :scale: 100%
    :alt: Area Selection
@@ -136,16 +136,18 @@ Note that your product might be split into several tiles if it spans a large are
 
 
 .. _drawingTools:
-.. figure:: DrawingTools.png
+.. figure:: images/DrawingTools.png
    :name: drawingToolsName
+   :scale: 100%
    :alt: Drawing Tools
    :align: center
 
    Drawing Tools
 
 .. _WKT:
-.. figure:: WKT.png
+.. figure:: images/WKT.png
    :name: wktName
+   :scale: 75%
    :alt: WKT Example
    :align: center
 
@@ -161,7 +163,7 @@ Unavailable periods are disabled and marked in grey colour. In the 10-day and th
 from drop-down lists. The forward and backward scrolling can be done by clicking on the arrow symbol.
 
 .. _compositingYear:
-.. figure:: CompositingPeriodYear.png
+.. figure:: images/CompositingPeriodYear.png
    :name: compositingYearName
    :scale: 50%
    :alt: Compositing Dialog (Year)
@@ -172,7 +174,7 @@ from drop-down lists. The forward and backward scrolling can be done by clicking
 As it can be seen in :numref:`compositingYear`, one can select a complete year as compositing period by clicking on it.
 
 .. _compositingQuarter:
-.. figure:: CompositingPeriodQuarter.png
+.. figure:: images/CompositingPeriodQuarter.png
    :name: compositingQuarterName
    :scale: 50%
    :alt: Compositing Dialog (Quarter)
@@ -184,7 +186,7 @@ Select a three-month period by clicking on the buttons Q1-Q4 (:numref:`compositi
 
 
 .. _compositingMonth:
-.. figure:: CompositingPeriodMonth.png
+.. figure:: images/CompositingPeriodMonth.png
    :name: compositingMonthName
    :scale: 50%
    :alt: Compositing Dialog (Month)
@@ -195,7 +197,7 @@ Select a three-month period by clicking on the buttons Q1-Q4 (:numref:`compositi
 The selection of the desired month as compositing period is straightforward (:numref:`compositingMonth`).
 
 .. _compositing10Days:
-.. figure:: Compositing10Days.png
+.. figure:: images/Compositing10Days.png
    :name: compositing10DaysName
    :scale: 50%
    :alt: Compositing Dialog (10 days)
@@ -208,7 +210,7 @@ The latter are displayed on the specific tab. Start- and end-days are marked in 
 the intermediate values in light green (see :numref:`compositing10Days`). Clicking on either day in the interval yields the same result.
 
 .. _compositingDay:
-.. figure:: CompositingPeriodDay.png
+.. figure:: images/CompositingPeriodDay.png
    :name: compositingDayName
    :scale: 50%
    :alt: Compositing Dialog (Day)
@@ -225,7 +227,7 @@ Click on "**PREPARE DOWNLOAD**" to enter the Order Panel. You will have to walk 
 On the last tab, you will be able to resume your selections. In the first tab the data format has to be defined (see :numref:`orderPanelData`).
 
 .. _orderPanelData:
-.. figure:: OrderPanelData.png
+.. figure:: images/OrderPanelData.png
    :name: orderPanelDataName
    :scale: 50%
    :alt: Order Panel (Data format)
@@ -238,7 +240,7 @@ Here you can select the bands that shall be included in the product (see also :r
 Apart from the surface reflectance bands, additional bands can be selected under "**Advanced Settings**" (see :numref:`orderPanelBands`).
 
 .. _orderPanelBands:
-.. figure:: OrderPanelBands.png
+.. figure:: images/OrderPanelBands.png
    :name: orderPanelBandsName
    :scale: 50%
    :alt: Order Panel (Band selection)
@@ -250,7 +252,7 @@ Click on "**Next**". The next page is used to assign a name to your specific ord
 Assign the name in such a way that it is as meaningful as possible. This way you will be able to distinguish your processings better later on.
 
 .. _orderPanelOrder:
-.. figure:: OrderPanelOrder.png
+.. figure:: images/OrderPanelOrder.png
    :name: orderPanelOrderName
    :scale: 50%
    :alt: Order Panel (Order information)
@@ -264,7 +266,7 @@ Click on "**Next**". You will get to the last page (see :numref:`orderPanelConfi
 As mentioned before, you are now able to review your decisions and make changes if necessary.
 
 .. _orderPanelConfirmOrder:
-.. figure:: OrderPanelConfirmOrder.png
+.. figure:: images/OrderPanelConfirmOrder.png
    :name: orderPanelConfirmOrderName
    :scale: 50%
    :alt: Order Panel (Confirm Order)
@@ -283,7 +285,7 @@ The definition of a time series is very similar to the definition of a mosaic.
 A click on the button "**Time Series**" brings up the following page (see :numref:`timeSeriesDialog`):
 
 .. _timeSeriesDialog:
-.. figure:: pages/images/TimeSeriesDialog.png
+.. figure:: images/TimeSeriesDialog.png
    :name: TimeSeriesDialogName
    :scale: 50%
    :alt: Time Series Dialog Page
@@ -293,7 +295,7 @@ A click on the button "**Time Series**" brings up the following page (see :numre
 
 
 .. _timeSeriesPixels:
-.. figure:: pages/images/TimeSeriesPixels.png
+.. figure:: images/TimeSeriesPixels.png
    :name: TimeSeriesPixelsName
    :scale: 100%
    :alt: Time Series Pixels
@@ -302,7 +304,7 @@ A click on the button "**Time Series**" brings up the following page (see :numre
    Time Series Pixels
 
 .. _timeSeriesGenerated:
-.. figure:: pages/images/TimeSeriesGenerated.png
+.. figure:: images/TimeSeriesGenerated.png
    :name: TimeSeriesGeneratedName
    :scale: 50%
    :alt: Time Series Generated Message
@@ -312,7 +314,7 @@ A click on the button "**Time Series**" brings up the following page (see :numre
 
 
 .. _timeSeriesHover:
-.. figure:: pages/images/TimeSeriesHover.png
+.. figure:: images/TimeSeriesHover.png
    :name: TimeSeriesHoverName
    :scale: 50%
    :alt: Time Series Hover Display
@@ -323,7 +325,7 @@ A click on the button "**Time Series**" brings up the following page (see :numre
 
 
 .. _timeSeriesData:
-.. figure:: pages/images/TimeSeriesData.png
+.. figure:: images/TimeSeriesData.png
    :name: TimeSeriesDataName
    :scale: 50%
    :alt: Time Series Data

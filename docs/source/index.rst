@@ -16,7 +16,7 @@ Table of Contents
     :maxdepth: 2
 
     Introduction
-    TheMosaicHub
+    pages/TheMosaicHub
     MosaickingAlgorithms
     ProductGuide
     LimitationsAndExtensions
