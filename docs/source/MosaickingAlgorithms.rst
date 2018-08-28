@@ -16,7 +16,7 @@ A threshold related to the number of valid observations is defined and applied i
 
 
 .. _mosaickingScheme:
-.. figure:: MosaickingScheme.png
+.. figure:: pages/images/MosaickingScheme.png
    :name: mosaickingSchemeName
    :scale: 80%
    :alt: Mosaicking Scheme
