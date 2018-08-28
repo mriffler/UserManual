@@ -50,3 +50,26 @@ All the todos
 *************
 
 .. todolist::
+
+
+Equations
+*********
+
+see also `Math <http://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html?highlight=equation#math>`_
+and `Options <http://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-math>`_
+
+Since Pythagoras, we know that :math:`a^2 + b^2 = c^2`.
+
+
+:math:`(a + b)^2 = a^2 + 2ab + b^2`
+
+:math:`(a - b)^2 = a^2 - 2ab + b^2`
+
+
+.. math::
+   :nowrap:
+
+   \begin{eqnarray}
+      y    & = & ax^2 + bx + c \\
+      f(x) & = & x^2 + 2xy + y^2
+   \end{eqnarray}
