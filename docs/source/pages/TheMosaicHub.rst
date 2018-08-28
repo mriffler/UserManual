@@ -279,7 +279,7 @@ If everything is correct, click on "**Generate**".
 .. _time_series:
 
 Time Series
-===========
+***********
 
 The definition of a time series is very similar to the definition of a mosaic.
 A click on the button "**Time Series**" brings up the following page (see :numref:`timeSeriesDialog`):
@@ -293,6 +293,8 @@ A click on the button "**Time Series**" brings up the following page (see :numre
 
    Time Series Dialog Page
 
+Fill out all sections of the dialog and select the target pixel(s) on the map. Klicking on the lower symbol toggles
+between 1x1 and 3x3 pixels in the particular resolution (:numref:`timeSeriesPixels`). When done, click on "**Generate**".
 
 .. _timeSeriesPixels:
 .. figure:: images/TimeSeriesPixels.png
@@ -303,15 +305,19 @@ A click on the button "**Time Series**" brings up the following page (see :numre
 
    Time Series Pixels
 
+Successful processing changes the "Generate" button into the following message (:numref:`timeSeriesGenerated`):
+
 .. _timeSeriesGenerated:
 .. figure:: images/TimeSeriesGenerated.png
    :name: TimeSeriesGeneratedName
-   :scale: 50%
+   :scale: 100%
    :alt: Time Series Generated Message
    :align: center
 
    Time Series Generated Message
 
+Additionally, the pixels marked in :numref:`timeSeriesPixels` get a green border. Hovering over pixels will quickly display
+their values and metadata; clicking on pixels will display the values on a page with the option to export data to a CSV file (:numref:`timeSeriesData`).
 
 .. _timeSeriesHover:
 .. figure:: images/TimeSeriesHover.png
@@ -333,12 +339,6 @@ A click on the button "**Time Series**" brings up the following page (see :numre
 
    Time Series Data
 
-
-Compositing Periods
--------------------
-
-Pixel Selection
----------------
 
 User Area
 *********
