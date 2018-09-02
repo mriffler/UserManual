@@ -260,7 +260,7 @@ Assign the name in such a way that it is as meaningful as possible. This way you
 
    Order Panel (Order information)
 
-Note that
+Note that large orders might be split into several tiles. The Sentinel tile names will appear as subfolders in the product when downloaded.
 
 Click on "**Next**". You will get to the last page (see :numref:`orderPanelConfirmOrder`).
 As mentioned before, you are now able to review your decisions and make changes if necessary.
@@ -274,7 +274,8 @@ As mentioned before, you are now able to review your decisions and make changes 
 
    Order Panel (Confirm Order)
 
-If everything is correct, click on "**Generate**".
+If everything is correct, click on "**Generate**". The processing starts and after a while (depending on the size of the order)
+you will be able to download your products in the :ref:`userArea`.
 
 .. _time_series:
 
@@ -339,6 +340,33 @@ their values and metadata; clicking on pixels will display the values on a page 
 
    Time Series Data
 
+.. _userArea:
 
 User Area
 *********
+
+Cicking on the button "**User Area**" in the Mosaic Hub App brings up the following dialog window (:numref:`userAreaImage`):
+
+.. _userAreaImage:
+.. figure:: images/UserAreaImage.png
+   :name: userAreaImageName
+   :scale: 50%
+   :alt: User Area
+   :align: center
+
+   User Area
+
+The User Area displays all current mosaic orders. You are able to filter for a production name to narrow your search.
+If something went wrong, you can inform the S2GM team by clicking on the envelope icon. Orders can be cancelled by clicking
+on the red cross icon. If the status of an order is finished, the download icon changes to green. When you click on it,
+the download dialog will be displayed (:numref:`mosaicDownloaderList`). You first have to select a download directory that you can change later if needed.
+Hovering the list will turn the entries from grey to black. A click on the black icon will start the download.
+
+.. _mosaicDownloaderList:
+.. figure:: images/MosaicDownloaderList.png
+   :name: mosaicDownloaderListName
+   :scale: 50%
+   :alt: Mosaic Downloader List
+   :align: center
+
+   Mosaic Downloader List
