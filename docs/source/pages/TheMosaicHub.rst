@@ -228,6 +228,7 @@ Click on "**PREPARE DOWNLOAD**" to enter the Order Panel.
 Order Panel
 -----------
 .. _orderPanel:
+
 You will have to walk through four tabs and make your choices.
 On the last tab, you will be able to resume your selections. In the first tab the data format has to be defined (see :numref:`orderPanelData`).
 

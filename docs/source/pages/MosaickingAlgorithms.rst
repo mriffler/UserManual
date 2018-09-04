@@ -99,21 +99,40 @@ The definition of a valid pixel is based on the spectra, the viewing geometry, a
 Temporal Resampling
 ===================
 Image compositing aims at identifying the best suited observation in a given period of time on the basis of pre-defined criteria at the pixel-level or image-level [#f3]_.
-**Short Term Composite - STC – adaption of the WELD algorithm regarding Sentinel-2**
-The STC approach has been motivated by the Web-enabled Landsat Data –WELD method [Roy et al., 2011 ] method and is, like WELD, based on a decision tree regarding the surface reflectance values, the scene classification, and the different indices. The compositing approach has been designed to preferentially select valid land surface observations with minimum cloud, snow, and atmospheric contamination. Therefore, the composited mosaics are not for studies of cloud, snow or the atmosphere. Compared to WELD, the STC has to work without the thermal bands available on Landsat 8, and is adapted to the spectral characteristics, as well as the Scene Classification available in the Sentinel 2 Level 2A product.  STC is part of the S2GM processing chain. ATBD provides a detailed description of this algorithm.
-**Medoid Composite [Flood, 2013 ]**
-The Medoid composite is part of the combined mosaicking algorithm to produce the composites in the S2GM service. The approach determines the medoid of a set of observations which can be considered as a representative value in a period. The algorithm is described in detail in the ATBD.
 
-QA / QC
-*******
+Short Term Composite - STC – adaption of the WELD algorithm regarding Sentinel-2
+--------------------------------------------------------------------------------
+The STC approach has been motivated by the Web-enabled Landsat Data –WELD method [#f4]_ method and is, like WELD,
+based on a decision tree regarding the surface reflectance values, the scene classification, and the different indices.
+The compositing approach has been designed to preferentially select valid land surface observations with minimum cloud,
+snow, and atmospheric contamination. Therefore, the composited mosaics are not for studies of cloud, snow or the atmosphere.
+Compared to WELD, the STC has to work without the thermal bands available on Landsat 8, and is adapted to the spectral characteristics,
+as well as the Scene Classification available in the Sentinel 2 Level 2A product.
+STC is part of the S2GM processing chain. The ATBD provides a detailed description of this algorithm.
 
-Processing System
-*****************
+Medoid Composite [#f5]_
+-----------------------
+The Medoid composite is part of the combined mosaicking algorithm to produce the composites in the S2GM service.
+The approach determines the medoid of a set of observations which can be considered as a representative value in a period.
+The algorithm is described in detail in the ATBD.
+
+Spatial resampling
+==================
+The S2GM service produces Sentinel-2 surface reflectance composites at global/regional scale at spatial resolutions of
+10m, 20m and 60m, which include all bands except B9 and B10. The Sentinel L2A input products do not include all bands
+in all three spatial target resolutions; a spatial resampling is thus necessary prior to the production of composites. It should be recalled here that:
+Terminology:
+Up-sampling is used when measurements with a larger spatial resolution (e.g. S2 band 1 with 60m) are resampled onto a grid with higher spatial resolution grid (e.g. to a grid at 10m resolution).
+Down-sampling is used when measurements with a higher spatial resolution (e.g. S2 band 2 with 10m) are resampled onto a grid with lower spatial resolution (e.g. to a grid with 60m resolution).
+The following list summarizes the different approaches to spatial re-sampling and compositing in the different spatial resolutions:
+
 
 
 
 .. rubric:: Footnotes
 
-.. [#f1] ESA 2018: `sen2cor Configuration and User Manual <http://step.esa.int/thirdparties/sen2cor/2.5.5/docs/s2-pdgs-mpc-l2a-sum-v2.5.5_v2.pdf>`_
+.. [#f1] ESA 2018: `sen2cor Configuration And User Manual <http://step.esa.int/thirdparties/sen2cor/2.5.5/docs/s2-pdgs-mpc-l2a-sum-v2.5.5_v2.pdf>`_
 .. [#f2] Doxani et al., 2018: Doxani, G.; Vermote, E.; Roger, J.-C.; Gascon, F.; Adriaensen, S.; Frantz, D.; Hagolle, O.; Hollstein, A.; Kirches, G.; Li, F.; Louis, J.; Mangin, A.; Pahlevan, N.; Pflug, B.; Vanhellemont, Q. Atmospheric Correction Inter-Comparison Exercise. Remote Sens. 2018, 10, 352.
 .. [#f3] Frantz et al., 2017: Frantz, D., et al. (2017). "Phenology-Adaptive Pixel-Based Compositing Using Optical Earth Observation Imagery." Remote Sensing Of Environment 190: 331-347
+.. [#f4] Roy et al., 2011: Roy, D. P., Ju, J., Kommareddy, I., Hansen, M., Vermote, E., Zhang, C., Kommareddy, A. (2011). Web-Enabled Landsat Data (WELD) Products – Algorithm Theoretical Basis Document, February 2011, 63 PP
+.. [#f5] Flood 2013: Flood, N. (2013). Seasonal Composite Landsat TM/ETM+ Images Using The Medoid (A Multi-Dimensional Median). `Remote Sensing, 5(12), 6481–6500. <http://doi.org/10.3390/rs5126481>`_
