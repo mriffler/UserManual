@@ -126,6 +126,27 @@ Up-sampling is used when measurements with a larger spatial resolution (e.g. S2 
 Down-sampling is used when measurements with a higher spatial resolution (e.g. S2 band 2 with 10m) are resampled onto a grid with lower spatial resolution (e.g. to a grid with 60m resolution).
 The following list summarizes the different approaches to spatial re-sampling and compositing in the different spatial resolutions:
 
+* for the 10m composite:
+
+  * up-sampling to 10m via nearest neighbour method for B01_60m, B05_20m, B06_20m, B07_20m, B8A_20m, B11_20m, B12_20m and SCL_20m
+  * selection of the best representative spectra based on all original and up-sampled bands in 10m
+  * Consequently, all bands of lower spatial resolution, may exhibit spatial (artificial) variability below the spatial resolution of the detector, because several values from different observation times may be used to generate the spatial composite in the higher resolution.
+
+* for the 20m composite
+
+  * down-sampling via mean aggregation or via wavelet down-sampling method required for B08_10m
+  * up-sampling via nearest neighbour method required for B01_60m
+  * selection of the best representative spectra based on all original and down- and up-sampled bands in 20m
+
+* for the 60m composite
+
+  * down-sampling via mean aggregation or via wavelet down-sampling method required for B08_10m
+  * selection of the best representative spectra based on all original and down-sampled bands in 60m
+
+The method delivers the requested mosaic in the desired spatial resolution as a composite of genuine observations within
+the aggregation period, albeit at (potentially) different observation times for each pixel. As a consequence,
+a later spatial aggregation, in particular a down-sampling to lower resolution is not advisable,
+because of the different selected observation time in the spatial grid.
 
 
 
