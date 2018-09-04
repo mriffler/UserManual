@@ -220,10 +220,16 @@ the intermediate values in light green (see :numref:`compositing10Days`). Clicki
 
 The selection of the desired month as compositing period is straightforward (:numref:`compositingDay`).
 
-.. _orderPanel:
 
 Once area of interest and compositing period have been selected, users must define further properties in the Order Panel dialogue.
-Click on "**PREPARE DOWNLOAD**" to enter the Order Panel. You will have to walk through four tabs and make your choices.
+Click on "**PREPARE DOWNLOAD**" to enter the Order Panel.
+
+
+Order Panel
+-----------
+.. _orderPanel:
+
+You will have to walk through four tabs and make your choices.
 On the last tab, you will be able to resume your selections. In the first tab the data format has to be defined (see :numref:`orderPanelData`).
 
 .. _orderPanelData:
