@@ -14,7 +14,7 @@ Look Up Tables (LUTs) are based on LibRadtran.
 
 The Mosaic Hub delivers products with reflectance bands chosen by the user in
 the Band selection section of the Mosaic Hub order panel
-(see also :numref:`orderPanelBands`).
+(see section or :ref:`orderPanelBands`).
 
 The following table lists the available bands and corresponding native
 resolutions of the Sentinel-2 L2A input products.
@@ -87,7 +87,7 @@ The following figure gives an example of an applied classification map:
 
 
 .. _sceneClassifMapExample:
-.. figure:: pages/images/SceneClassificationMapExample.png
+.. figure:: images/SceneClassificationMapExample.png
    :name: SceneClassificationMapExample
    :scale: 100%
    :alt: Scene classification map example
