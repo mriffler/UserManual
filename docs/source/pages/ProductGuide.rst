@@ -14,7 +14,7 @@ Look Up Tables (LUTs) are based on LibRadtran.
 
 The Mosaic Hub delivers products with reflectance bands chosen by the user in
 the Band selection section of the Mosaic Hub order panel
-(see section or :ref:`orderPanelBands`).
+(see section :ref:`OrderPanel <orderPanel>` or :ref:`orderPanelBands`).
 
 The following table lists the available bands and corresponding native
 resolutions of the Sentinel-2 L2A input products.
