@@ -7,7 +7,14 @@ Product Guide
 General
 *******
 
-All products provide surface reflectance in eleven bands. The surface reflectance is computed using the “Sentinel-2 Atmospheric Correction” (L2A_AtmCorr) algorithm and based on reference radiative transfer code. Look Up Tables (LUTs) are based on LibRadtran.
+All inputs products provide surface reflectance in eleven bands.
+The surface reflectance is computed using the “Sentinel-2 Atmospheric Correction”
+(L2A_AtmCorr) algorithm and based on reference radiative transfer code.
+Look Up Tables (LUTs) are based on LibRadtran.
+
+The Mosaic Hub delivers products with reflectance bands chosen by the user in
+the Band selection section of the Mosaic Hub order panel
+(see :ref:`orderPanel` or :ref:`orderPanelBands`).
 
 .. _surface_reflectance_bands:
 
