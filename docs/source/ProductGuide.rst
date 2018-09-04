@@ -16,6 +16,9 @@ The Mosaic Hub delivers products with reflectance bands chosen by the user in
 the Band selection section of the Mosaic Hub order panel
 (see :ref:`orderPanel` or :ref:`orderPanelBands`).
 
+The following table lists the available bands and corresponding native
+resolutions of the Sentinel-2 L2A input products.
+
 .. _surface_reflectance_bands:
 
 Surface reflectance bands
