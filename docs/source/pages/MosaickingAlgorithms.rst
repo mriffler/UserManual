@@ -67,6 +67,22 @@ A threshold related to the number of valid observations is defined and applied i
 
 Input Data- Sentinel-2 L2A processed with Sen2Cor
 *************************************************
+The Sentinel-2 L2A products produced with Sen2Cor and delivered by ESA via the two Copernicus hubs serve as input for the mosaic service.
+The Sen2Cor processor [#f1]_,
+which generates the L2A products has been analysed in the Atmospheric Correction Inter-Comparison Exercise (ACIX) exercise
+and was found to provide reasonable results regarding the aerosol optical depth, water vapour and surface reflectance values.
+The scene classification was not part of the assessment in the ACIX exercise [Doxani et al., 2018 [#f2]_].
+The processing methodology for the mosaicking algorithm relies on quality of the input data in terms of surface reflectance values,
+on the absence of artefacts and on a correct pixel classification, in particular for clouds and cloud shadows.
+Despite the high accuracy and quality of the L2A images reported in the sen2cor documentation,
+we encountered several issues concerning remaining haze, cloud omission errors and commission errors for bright surfaces.
+In particular, urban areas are systematically flagged with the low probability flag.
+This has a significant influence on the quality of the mosaic. The erroneous S2 L2A scene classification has a direct
+impact on the quality of the resulting mosaics. The configuration of the pre-filtering based on the L2A flags has different
+effects on the resulting mosaics depending on the compositing method (Medoid or STC) applied.
+In summary, a very strict pre-filtering leads to systematic removal of numerous valid observations while undetected
+cloud pixels are still present. In turn, a weak pre-filtering results in numerous occurrences of cloud spectra (Medoid)
+or even remaining clouds in the final mosaic products (STC).
 
 
 Medoid
@@ -80,3 +96,10 @@ QA / QC
 
 Processing System
 *****************
+
+
+
+.. rubric:: Footnotes
+
+.. [#f1] ESA 2018: `sen2cor Configuration and User Manual <http://step.esa.int/thirdparties/sen2cor/2.5.5/docs/s2-pdgs-mpc-l2a-sum-v2.5.5_v2.pdf>`_
+.. [#f2] Doxani et al., 2018: DOXANI, G.; VERMOTE, E.; ROGER, J.-C.; GASCON, F.; ADRIAENSEN, S.; FRANTZ, D.; HAGOLLE, O.; HOLLSTEIN, A.; KIRCHES, G.; LI, F.; LOUIS, J.; MANGIN, A.; PAHLEVAN, N.; PFLUG, B.; VANHELLEMONT, Q. ATMOSPHERIC CORRECTION INTER-COMPARISON EXERCISE. REMOTE SENS. 2018, 10, 352.
