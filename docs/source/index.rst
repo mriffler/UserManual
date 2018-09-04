@@ -18,7 +18,7 @@ Table of Contents
     Introduction
     pages/TheMosaicHub
     pages/MosaickingAlgorithms
-    ProductGuide
+    pages/ProductGuide
     LimitationsAndExtensions
     Glossary
     References
