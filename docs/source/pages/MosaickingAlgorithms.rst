@@ -85,11 +85,24 @@ cloud pixels are still present. In turn, a weak pre-filtering results in numerou
 or even remaining clouds in the final mosaic products (STC).
 
 
-Medoid
-======
+Pre-processing - filtering
+==========================
+The pre-processing module analyses all input spectra and identifies all pixel which should be used in the compositing/mosaicking approach that are defined as valid observation.
+As explained before, the unreliability of the S2 L2A scene classification requires this pre-processing of the Sen2Cor data.
+Furthermore, unflagged artefacts on the swath border in the Sen2Cor data have been also filtered out by the pre-processing to ensure the quality of the mosaics.
+This filtering is done by using the view zenith, because the swath border can be identified through the view zenith angle.
+Additionally, all input spectral bands containing any Not-a-Number (NaN) or infinite value have been also identified and filtered out by the pre-processing regarding the quality of the mosaics.
+The pre-processing of the input spectra has been applied to perform the mosaicking only for valid observations.
+The definition of a valid pixel is based on the spectra, the viewing geometry, and also of the Sen2Cor scene classification layer (SCL).
 
-STC
-===
+
+Temporal Resampling
+===================
+Image compositing aims at identifying the best suited observation in a given period of time on the basis of pre-defined criteria at the pixel-level or image-level [#f3]_.
+**Short Term Composite - STC – adaption of the WELD algorithm regarding Sentinel-2**
+The STC approach has been motivated by the Web-enabled Landsat Data –WELD method [Roy et al., 2011 ] method and is, like WELD, based on a decision tree regarding the surface reflectance values, the scene classification, and the different indices. The compositing approach has been designed to preferentially select valid land surface observations with minimum cloud, snow, and atmospheric contamination. Therefore, the composited mosaics are not for studies of cloud, snow or the atmosphere. Compared to WELD, the STC has to work without the thermal bands available on Landsat 8, and is adapted to the spectral characteristics, as well as the Scene Classification available in the Sentinel 2 Level 2A product.  STC is part of the S2GM processing chain. ATBD provides a detailed description of this algorithm.
+**Medoid Composite [Flood, 2013 ]**
+The Medoid composite is part of the combined mosaicking algorithm to produce the composites in the S2GM service. The approach determines the medoid of a set of observations which can be considered as a representative value in a period. The algorithm is described in detail in the ATBD.
 
 QA / QC
 *******
@@ -102,4 +115,5 @@ Processing System
 .. rubric:: Footnotes
 
 .. [#f1] ESA 2018: `sen2cor Configuration and User Manual <http://step.esa.int/thirdparties/sen2cor/2.5.5/docs/s2-pdgs-mpc-l2a-sum-v2.5.5_v2.pdf>`_
-.. [#f2] Doxani et al., 2018: DOXANI, G.; VERMOTE, E.; ROGER, J.-C.; GASCON, F.; ADRIAENSEN, S.; FRANTZ, D.; HAGOLLE, O.; HOLLSTEIN, A.; KIRCHES, G.; LI, F.; LOUIS, J.; MANGIN, A.; PAHLEVAN, N.; PFLUG, B.; VANHELLEMONT, Q. ATMOSPHERIC CORRECTION INTER-COMPARISON EXERCISE. REMOTE SENS. 2018, 10, 352.
+.. [#f2] Doxani et al., 2018: Doxani, G.; Vermote, E.; Roger, J.-C.; Gascon, F.; Adriaensen, S.; Frantz, D.; Hagolle, O.; Hollstein, A.; Kirches, G.; Li, F.; Louis, J.; Mangin, A.; Pahlevan, N.; Pflug, B.; Vanhellemont, Q. Atmospheric Correction Inter-Comparison Exercise. Remote Sens. 2018, 10, 352.
+.. [#f3] Frantz et al., 2017: Frantz, D., et al. (2017). "Phenology-Adaptive Pixel-Based Compositing Using Optical Earth Observation Imagery." Remote Sensing Of Environment 190: 331-347
