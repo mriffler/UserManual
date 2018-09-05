@@ -348,7 +348,7 @@ their values and metadata; clicking on pixels will display the values on a page 
 User Area
 *********
 
-Cicking on the button "**User Area**" in the Mosaic Hub App brings up the following dialog window (:numref:`userAreaImage`):
+Clicking on the button "**User Area**" in the Mosaic Hub App brings up the following dialog window (:numref:`userAreaImage`):
 
 .. _userAreaImage:
 .. figure:: images/UserAreaImage.png
@@ -365,6 +365,17 @@ on the red cross icon. If the status of an order is finished, the download icon 
 the download dialog will be displayed (:numref:`mosaicDownloaderList`). You first have to select a download directory that you can change later if needed.
 Hovering the list will turn the entries from grey to black. A click on the black icon will start the download.
 
+.. _moreTiles:
+.. figure:: images/MoreTiles.jpg
+   :name: moreTilesName
+   :scale: 50%
+   :alt: More Tiles available
+   :align: center
+
+  More Tiles available
+
+
+
 .. _mosaicDownloaderList:
 .. figure:: images/MosaicDownloaderList.png
    :name: mosaicDownloaderListName
@@ -377,18 +388,8 @@ Hovering the list will turn the entries from grey to black. A click on the black
 As already mentioned above: if you selected a large area, the downloaded
 
 
-.. _moreTiles:
-.. figure:: images/MoreTiles.png
-   :name: moreTilesName
-   :scale: 50%
-   :alt: More Tiles available
-   :align: center
-
-  More Tiles available
-
-
 .. _tilesDownloaded:
-.. figure:: images/TilesDownloaded.png
+.. figure:: images/TilesDownloaded.jpg
    :name: tilesDownloadedName
    :scale: 50%
    :alt: Tiles downloaded to the file system
