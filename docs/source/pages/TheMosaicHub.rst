@@ -4,10 +4,6 @@
 The Mosaic Hub
 ##############
 
-
-.. note::
-   The content will be provided by UK
-
 The Mosaic Hub front-end is the main tool for S2GM users.
 It allows for the specification of S2GM products in terms of the spatial extent as well as the compositing period
 and the format of the output products.
@@ -266,7 +262,8 @@ Assign the name in such a way that it is as meaningful as possible. This way you
 
    Order Panel (Order information)
 
-Note that large orders might be split into several tiles. The Sentinel tile names will appear as subfolders in the product when downloaded.
+Note that large orders might be split into several tiles. The Sentinel tile names will appear as subfolders in the
+product when downloaded.
 
 Click on "**Next**". You will get to the last page (see :numref:`orderPanelConfirmOrder`).
 As mentioned before, you are now able to review your decisions and make changes if necessary.
@@ -376,3 +373,28 @@ Hovering the list will turn the entries from grey to black. A click on the black
    :align: center
 
    Mosaic Downloader List
+
+As already mentioned above: if you selected a large area, the downloaded
+
+
+.. _moreTiles:
+.. figure:: images/MoreTiles.png
+   :name: moreTilesName
+   :scale: 50%
+   :alt: More Tiles available
+   :align: center
+
+  More Tiles available
+
+
+.. _tilesDownloaded:
+.. figure:: images/TilesDownloaded.png
+   :name: tilesDownloadedName
+   :scale: 50%
+   :alt: Tiles downloaded to the file system
+   :align: center
+
+  Tiles downloaded to the file system
+
+
+

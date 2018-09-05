@@ -4,9 +4,6 @@
 Mosaicking Algorithms
 #####################
 
-.. note::
-   The content needs to be provided/edited by GK
-
 Input to the mosaicking process are surface reflectance values, from the so-called Level 2A product.
 Level 2As are operationally produced by the Copernicus (ESA) ground segment.
 Currently ESA is using the Sen2Cor atmospheric correction processor for the generation of Level 2A products.
