@@ -6,11 +6,19 @@ Product Guide
 
 General
 *******
+All Mosaic Hub products provide 22 raster bands selectable by the user
+during the order process (see section :ref:`Order Panel <orderPanel>`). Available
+raster bands comprise:
 
-All inputs products provide surface reflectance in eleven bands.
-The surface reflectance is computed using the “Sentinel-2 Atmospheric Correction”
-(L2A_AtmCorr) algorithm and based on reference radiative transfer code.
-Look Up Tables (LUTs) are based on LibRadtran.
+- 11 surface reflectance bands
+- 4 quality indicator bands
+- 4 sun/view geometry bands
+- 2 validation bands
+- 1 quality band
+
+Additionally two raster bands comprising latitude/longitude information are provided with each product.
+
+The following chapter give more detailed information for the available bands.
 
 .. _surface_reflectance_bands:
 
@@ -19,6 +27,9 @@ Surface reflectance bands
 The Mosaic Hub delivers products with reflectance bands chosen by the user in
 the **Band selection** section of the Mosaic Hub order panel
 (see section :ref:`Order Panel <orderPanel>`).
+The surface reflectance is computed using the “Sentinel-2 Atmospheric Correction”
+(L2A_AtmCorr) algorithm and based on reference radiative transfer code.
+Look Up Tables (LUTs) are based on LibRadtran.
 
 The following :ref:`table <surface_reflectance_bands_table>` lists the available bands and corresponding native
 resolutions of the Sentinel-2 L2A input products.
@@ -32,7 +43,7 @@ resolutions of the Sentinel-2 L2A input products.
 
 Quality indicator bands
 =======================
-All products additionally provide quality indicator bands.
+All products additionally provide quality indicator bands, if selected.
 
 .. _quality_indicator_bands_table:
 .. csv-table:: Quality Indicator bands
@@ -40,6 +51,8 @@ All products additionally provide quality indicator bands.
    :delim: ;
    :widths: 30, 60, 10
    :header-rows: 1
+
+|
 
 The following figure shows a list of all quality_scene_classification classes
 
@@ -69,60 +82,115 @@ The following figure gives an example of an applied classification map:
 
 View and sun geometry bands
 ===========================
-The products additionally provide view and sun geometry information.
+The products additionally provide view and sun geometry information, if selected.
 
-**Table #: View and sun geometry bands**
-
-+--------------------+--------------------------------------+--------+
-| Band name          |  Description                         | Unit   |
-+====================+======================================+========+
-| view_zenith_mean   | Mean view zenith angle of all bands  | Degree |
-+--------------------+--------------------------------------+--------+
-| view_azimuth_mean  | Mean view azimuth angle of all bands | Degree |
-+--------------------+--------------------------------------+--------+
-| sun_zenith         | Sun zenith angle                     | Degree |
-+--------------------+--------------------------------------+--------+
-| sun_azimuth        | Sun azimuth angle                    | Degree |
-+--------------------+--------------------------------------+--------+
-
-The products provide information on the validity of an observation (pixel).
+.. _view_and_sun_geometry_table:
+.. csv-table:: View and sun geometry bands
+   :file: csv/view_sun_geometry.csv
+   :delim: ;
+   :widths: 25, 45, 10
+   :header-rows: 1
 
 .. _validation_bands:
 
 Validation bands
 ================
-**Table #: Validation bands**
+The products provide information on the validity of an observation (pixel), if selected.
 
-+--------------------+-----------------------------------------------+--------+
-| Band name          |  Description                                  | Unit   |
-+====================+===============================================+========+
-| source_index       | Index of the product used for this pixel. See | None   |
-|                    | 'SourceProductIndices' element in metadata.   |        |
-+--------------------+-----------------------------------------------+--------+
+.. _validation_bands_table:
+.. csv-table:: Validation bands
+   :file: csv/validation_bands.csv
+   :delim: ;
+   :widths: 10, 45, 10
+   :header-rows: 1
 
 .. _medoid_bands:
 
 Medoid quality bands
 ====================
-Finally, a quality measure for the Medoid compositing algorithm is included.
+Finally, a quality measure for the Medoid compositing algorithm is included, if selected.
 
-**Table#: Medoid quality band**
+.. _medoid_bands_table:
+.. csv-table:: Medoid quality bands
+   :file: csv/medoid_quality_bands.csv
+   :delim: ;
+   :widths: 10, 45, 10
+   :header-rows: 1
 
-+------------+-----------------------------------------------+--------+
-| Band name  |  Description                                  | Unit   |
-+============+===============================================+========+
-| medoid_mos | The measure of spread of the medoid algorithm.| None   |
-|            | Defined as sum of distances divided by number |        |
-|            | of observations.                              |        |
-+------------+-----------------------------------------------+--------+
+Resolution
+**********
+All Mosaic Hub raster products are provided in uniform resolution. Three different resolutions are available:
 
-The products additionally hold two bands with latitude and longitude information.
+- 10m
+- 20m
+- 60m
+
+
+
+Coordinate Reference Systems
+****************************
+The Mosaic Hub raster products are provided either projected in UTM(WGS84) or unprojected WGS84
+
+UTM
+====
+Universal Transverse Mercator (UTM) conformal projection is not a single map projection.
+The system instead divides the Earth into sixty zones, each being a six-degree band of longitude,
+and uses a secant transverse Mercator projection in each zone. WGS84 is used as ellipsoid for UTM.
+
+WGS84
+=====
+WGS84 is an Earth-centered, Earth-fixed terrestrial reference system and geodetic datum.
+WGS84 is based on a consistent set of constants and model parameters that describe
+the Earth's size, shape, and gravity and geomagnetic fields.
+
+File Formats
+************
+The Mosaic Hub raster products are available in three different file formats:
+
+- GeoTiff
+- Jpeg2000
+- NetCDF
+
+GeoTiff / Jpeg2000
+==================
+
+General
+-------
+
+Naming Convention and File Structure
+------------------------------------
+
+Data Content
+------------
+
+GeoTiff / Jpeg2000 Data Files
++++++++++++++++++++++++++++++
+
+Metadata
+++++++++
+
+NetCDF
+======
+
+General
+-------
+
+Naming Convention and File Structure
+------------------------------------
+
+Data Content
+------------
+
+NetCDf Data File
+++++++++++++++++
+
+Metadata
+++++++++
 
 INSPIRE
 *******
 
-Coordinate Reference Systems
-****************************
+
 
 Software
 ********
@@ -137,41 +205,7 @@ QGIS
 ====
 
 
-GeoTiff / Jpeg2000
-******************
 
-General
-=======
-
-Naming Convention and File Structure
-====================================
-
-Data Content
-============
-
-GeoTiff / Jpeg2000 Data Files
------------------------------
-
-Metadata
---------
-
-NetCDF
-******
-
-General
-=======
-
-Naming Convention and File Structure
-====================================
-
-Data Content
-============
-
-NetCDf Data File
-----------------
-
-Metadata
---------
 
 Time Series
 ***********

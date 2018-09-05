@@ -1,0 +1,2 @@
+Band name;Description;Unit
+medoid_mos;The measure of spread of the medoid algorithm. Defined as, sum of distances divided by number of observations.;None

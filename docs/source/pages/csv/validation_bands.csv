@@ -1,0 +1,3 @@
+Band name;Description;Unit
+source_index;Index of the product used for this pixel. See 'SourceProductIndices' element in metadata;None
+valid_obs;Number of valid observations available for the production of this pixel.;None

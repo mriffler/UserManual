@@ -3,6 +3,3 @@ view_zenith_mean;Mean view zenith angle of all bands;Degree
 view_azimuth_mean;Mean view azimuth angle of all bands;Degree
 sun_zenith;Sun zenith angle;Degree
 sun_azimuth;Sun azimuth angle;Degree
-;;
-;;
-;;

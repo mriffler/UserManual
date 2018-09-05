@@ -366,15 +366,13 @@ the download dialog will be displayed (:numref:`mosaicDownloaderList`). You firs
 Hovering the list will turn the entries from grey to black. A click on the black icon will start the download.
 
 .. _moreTiles:
-.. figure:: images/MoreTiles.jpg
+.. figure:: images/MoreTiles.png
    :name: moreTilesName
    :scale: 50%
    :alt: More Tiles available
    :align: center
 
-  More Tiles available
-
-
+   More Tiles available
 
 .. _mosaicDownloaderList:
 .. figure:: images/MosaicDownloaderList.png
@@ -389,13 +387,13 @@ As already mentioned above: if you selected a large area, the downloaded
 
 
 .. _tilesDownloaded:
-.. figure:: images/TilesDownloaded.jpg
+.. figure:: images/TilesDownloaded.png
    :name: tilesDownloadedName
    :scale: 50%
    :alt: Tiles downloaded to the file system
    :align: center
 
-  Tiles downloaded to the file system
+   Tiles downloaded to the file system
 
 
 
