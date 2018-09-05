@@ -12,70 +12,36 @@ The surface reflectance is computed using the “Sentinel-2 Atmospheric Correcti
 (L2A_AtmCorr) algorithm and based on reference radiative transfer code.
 Look Up Tables (LUTs) are based on LibRadtran.
 
-The Mosaic Hub delivers products with reflectance bands chosen by the user in
-the Band selection section of the Mosaic Hub order panel
-(see section :ref:`Order Panel <orderPanel>`).
-
-The following table lists the available bands and corresponding native
-resolutions of the Sentinel-2 L2A input products.
-
 .. _surface_reflectance_bands:
 
 Surface reflectance bands
 =========================
+The Mosaic Hub delivers products with reflectance bands chosen by the user in
+the **Band selection** section of the Mosaic Hub order panel
+(see section :ref:`Order Panel <orderPanel>`).
 
-+------------------------+-----------------+---------------+
-| Band name              |  Central        | Spatial       |
-|                        |  Wavelength (nm)| Resolution (m)|
-+========================+=================+===============+
-| B01                    | 443             | 60            |
-+------------------------+-----------------+---------------+
-| B02                    | 490             | 10            |
-+------------------------+-----------------+---------------+
-| B03                    | 560             | 10            |
-+------------------------+-----------------+---------------+
-| B04                    | 665             | 10            |
-+------------------------+-----------------+---------------+
-| B05                    | 705             | 20            |
-+------------------------+-----------------+---------------+
-| B06                    | 740             | 20            |
-+------------------------+-----------------+---------------+
-| B07                    | 783             | 20            |
-+------------------------+-----------------+---------------+
-| B08                    | 842             | 10            |
-+------------------------+-----------------+---------------+
-| B8A                    | 865             | 20            |
-+------------------------+-----------------+---------------+
-| B11                    | 1610            | 20            |
-+------------------------+-----------------+---------------+
-| B12                    | 2190            | 20            |
-+------------------------+-----------------+---------------+
+The following :ref:`table <surface_reflectance_bands_table>` lists the available bands and corresponding native
+resolutions of the Sentinel-2 L2A input products.
 
+.. _surface_reflectance_bands_table:
 .. csv-table:: Sentinel-2 bands
    :file: csv/S2_bands.csv
    :header-rows: 1
 
 .. _quality_indicator_bands:
 
+Quality indicator bands
+=======================
 All products additionally provide quality indicator bands.
 
-**Table #: Quality Indicator bands**
+.. _quality_indicator_bands_table:
+.. csv-table:: Quality Indicator bands
+   :file: csv/quality_indicator_bands.csv
+   :delim: ;
+   :widths: 30, 60, 10
+   :header-rows: 1
 
-+------------------------------+------------------------------------------------+------+
-| Band name                    |  Description                                   | Unit |
-+==============================+================================================+======+
-| quality_aot                  | Aerosol Optical Thickness (AOT)                | None |
-+------------------------------+------------------------------------------------+------+
-| quality_cloud_confidence     | Ranging from 0 for high confidence clear sky   | %    |
-|                              | to 100 for high confidence cloudy.             |      |
-+------------------------------+------------------------------------------------+------+
-| quality_snow_confidence      | Ranging from 0 for high confidence no snow/ice | %    |
-|                              | to 100 for high confidence snow/ice.           |      |
-+------------------------------+------------------------------------------------+------+
-| quality_scene_classification | Scene classification map                       | None |
-|                              | (see :numref:`sceneClassifMap` & Table ##)     |      |
-+------------------------------+------------------------------------------------+------+
-
+The following figure shows a list of all quality_scene_classification classes
 
 .. _sceneClassifMap:
 .. figure:: images/ClassificationMap.png
@@ -99,9 +65,11 @@ The following figure gives an example of an applied classification map:
 
    Scene classification map example
 
-The products provide view and sun geometry information.
-
 .. _view_sun_geometry_bands:
+
+View and sun geometry bands
+===========================
+The products additionally provide view and sun geometry information.
 
 **Table #: View and sun geometry bands**
 
@@ -119,6 +87,10 @@ The products provide view and sun geometry information.
 
 The products provide information on the validity of an observation (pixel).
 
+.. _validation_bands:
+
+Validation bands
+================
 **Table #: Validation bands**
 
 +--------------------+-----------------------------------------------+--------+
@@ -128,6 +100,10 @@ The products provide information on the validity of an observation (pixel).
 |                    | 'SourceProductIndices' element in metadata.   |        |
 +--------------------+-----------------------------------------------+--------+
 
+.. _medoid_bands:
+
+Medoid quality bands
+====================
 Finally, a quality measure for the Medoid compositing algorithm is included.
 
 **Table#: Medoid quality band**

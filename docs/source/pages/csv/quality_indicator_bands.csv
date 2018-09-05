@@ -1,0 +1,5 @@
+Band name;Description;Unit
+quality_aot;Aerosol Optical Thickness (AOT);None
+quality_cloud_confidence;Ranging from 0 for high confidence clear sky to 100 for high confidence cloudy.;%
+quality_snow_confidence;Ranging from 0 for high confidence no snow/ice to 100 for high confidence snow/ice.;%
+quality_scene_classification;Scene classification map (see :numref:`sceneClassifMap` & :numref:`sceneClassifMapExample`);None
