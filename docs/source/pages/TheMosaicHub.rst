@@ -377,7 +377,7 @@ Hovering the list will turn the entries from grey to black. A click on the black
 As already mentioned above: if you selected a large area, the orders might be split into several tiles that appear in the
 download list after you clicked on the download button. To avoid unnecessary processing in the Hub,
 processings and thus the downloads will proceed only after user involvement. Also, you will be notified that more tiles
-might be available (:numref:`moreTiles`).
+might be available (:numref:`moreTiles`). The red check mark signifies that the download isn't yet complete.
 
 .. _moreTiles:
 .. figure:: images/MoreTiles.png
