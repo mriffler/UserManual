@@ -365,15 +365,6 @@ on the red cross icon. If the status of an order is finished, the download icon 
 the download dialog will be displayed (:numref:`mosaicDownloaderList`). You first have to select a download directory that you can change later if needed.
 Hovering the list will turn the entries from grey to black. A click on the black icon will start the download.
 
-.. _moreTiles:
-.. figure:: images/MoreTiles.png
-   :name: moreTilesName
-   :scale: 50%
-   :alt: More Tiles available
-   :align: center
-
-   More Tiles available
-
 .. _mosaicDownloaderList:
 .. figure:: images/MosaicDownloaderList.png
    :name: mosaicDownloaderListName
@@ -383,8 +374,21 @@ Hovering the list will turn the entries from grey to black. A click on the black
 
    Mosaic Downloader List
 
-As already mentioned above: if you selected a large area, the downloaded
+As already mentioned above: if you selected a large area, the orders might be split into several tiles that appear in the
+download list after you clicked on the download button. To avoid unnecessary processing in the Hub,
+processings and thus the downloads will proceed only after user involvement. Also, you will be notified that more tiles
+might be available (:numref:`moreTiles`).
 
+.. _moreTiles:
+.. figure:: images/MoreTiles.png
+   :name: moreTilesName
+   :scale: 50%
+   :alt: More Tiles available
+   :align: center
+
+   More Tiles available
+
+The following image shows an example download directory for a multi-tile product:
 
 .. _tilesDownloaded:
 .. figure:: images/TilesDownloaded.png
