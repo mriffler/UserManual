@@ -280,52 +280,58 @@ Files
 -----
 The file naming differs for GeoTiff/Jpeg2000 and NetCDF due to the structuring of the files.
 
-    **GeoTiff/Jpeg2000:**
+**GeoTiff/Jpeg2000:**
 
-    In GeoTiff and Jpeg2000 format all raster bands are stored in separate files (see :ref:`Files <files>`)
+In GeoTiff and Jpeg2000 format all raster bands are stored in separate files (see :ref:`Files <files>`)
 
-    {RasterBandIdentifier}_{TemporalIdentifierSpatialIdentifier}_{PeriodStart}_{OrderName}.{FileExtension}
+{RasterBandIdentifier}_{TemporalIdentifierSpatialIdentifier}_{PeriodStart}_{OrderName}.{FileExtension}
 
-    In short, and with the correct length  indicated by placeholders (if not variable; variability indicated by ...):
+In short, and with the correct length  indicated by placeholders (if not variable; variability indicated by ...):
 
-    {BB...BB}_{TSS}_{SSSSSSSS}_{AA...AA}.{ext}
+{BB...BB}_{TSS}_{SSSSSSSS}_{AA...AA}.{ext}
 
-    *Example: B04_M60_20170701_Northern_Germany.jp2*
+*Example: B04_M60_20170701_Northern_Germany.jp2*
 
-    .. _file_naming_tif_jpg_table:
+|
 
-    .. csv-table:: File naming convention GeoTiff/Jpeg200
-       :file: csv/file_naming_convention_tif_jpg.csv
-       :delim: ;
-       :widths: 9, 32, 59
-       :header-rows: 1
 
-    |
+.. _file_naming_tif_jpg_table:
 
-    **NetCDF**
+.. csv-table:: File naming convention GeoTiff/Jpeg200
+   :file: csv/file_naming_convention_tif_jpg.csv
+   :delim: ;
+   :widths: 9, 32, 59
+   :header-rows: 1
 
-    In NetCDF format all raster bands are stored in a single NetCDF (.nc) file (see :ref:`Files <files>`)
+|
 
-    {TemporalIdentifierSpatialIdentifier}_{PeriodStart}_{OrderName}.{FileExtension}
+**NetCDF**
 
-    In short, and with the correct length  indicated by placeholders (if not variable; variability indicated by ...):
+In NetCDF format all raster bands are stored in a single NetCDF (.nc) file (see :ref:`Files <files>`)
 
-    {TSS}_{SSSSSSSS}_{AA...AA}.{ext}
+{TemporalIdentifierSpatialIdentifier}_{PeriodStart}_{OrderName}.{FileExtension}
 
-    *Example:*
-        *M60_20170701_Northern_Germany.nc*
+In short, and with the correct length  indicated by placeholders (if not variable; variability indicated by ...):
 
-        *metadata_20170701_Northern_Germany.json*
+{TSS}_{SSSSSSSS}_{AA...AA}.{ext}
 
-    .. _file_naming_netcdf_table:
+*Example:*
+    *M60_20170701_Northern_Germany.nc*
 
-    .. csv-table:: File naming convention NetCDF
-       :file: csv/file_naming_convention_netcdf.csv
-       :delim: ;
-       :widths: 9, 32, 59
-       :header-rows: 1
+    *metadata_20170701_Northern_Germany.json*
 
-    The metadata file is prefixed with 'metadata/_'
+|
+
+
+.. _file_naming_netcdf_table:
+
+.. csv-table:: File naming convention NetCDF
+   :file: csv/file_naming_convention_netcdf.csv
+   :delim: ;
+   :widths: 9, 32, 59
+   :header-rows: 1
+
+The metadata file is prefixed with 'metadata/_'
 
 Data Content
 ============
