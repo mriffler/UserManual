@@ -304,7 +304,28 @@ The file naming differs for GeoTiff/Jpeg2000 and NetCDF due to the structuring o
 
     **NetCDF**
 
-    In NetCDF format
+    In NetCDF format all raster bands are stored in a single NetCDF (.nc) file (see :ref:`Files <files>`)
+
+    {TemporalIdentifierSpatialIdentifier}_{PeriodStart}_{OrderName}.{FileExtension}
+
+    In short, and with the correct length  indicated by placeholders (if not variable; variability indicated by ...):
+
+    {TSS}_{SSSSSSSS}_{AA...AA}.{ext}
+
+    *Example:*
+        *M60_20170701_Northern_Germany.nc*
+
+        *metadata_20170701_Northern_Germany.json*
+
+    .. _file_naming_netcdf_table:
+
+    .. csv-table:: File naming convention NetCDF
+       :file: csv/file_naming_convention_netcdf.csv
+       :delim: ;
+       :widths: 9, 32, 59
+       :header-rows: 1
+
+    The metadata file is prefixed with 'metadata/_'
 
 Data Content
 ============

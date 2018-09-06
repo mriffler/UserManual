@@ -1,0 +1,12 @@
+Identifyer;Description;Values / format
+T;Temporal identifier;D ... daily
+;;T ... 10day  
+;;M ... monthly 
+;;Q ... quarterly 
+;;Y ... yearly
+SS;Spatial identifier;10 ... 10m 
+;;20 ... 20m 
+;;60 ... 60m
+SSSSSSSS;Start date of the mosaicking period;YYYYMMDD
+AA...AA;Order name;Variable number of characters which can be freely chosen by a user
+ext;FileExtension;Depending on the file format it can be nc or tif
