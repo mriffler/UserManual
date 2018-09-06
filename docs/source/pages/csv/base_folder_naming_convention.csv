@@ -1,0 +1,18 @@
+Identifyer;Description;Values / format
+T;Temporal identifier;D ... daily 
+;;T ... 10day  
+;;M ... monthly 
+;;Q ... quarterly 
+;;Y ... yearly
+SS;Spatial identifier;10 ... 10m 
+;;20 ... 20m 
+;;60 ... 60m
+SSSSSSSS;Start date of the mosaicking period;YYYYMMDD
+EEEEEEEE;End date of the mosaicking period;YYYYMMDD
+AA...AA;Order name;Variable number of characters which can be freely chosen by a user
+CCC;Configuration indicator. Identifier for the different pre-defined configurations offered to users.;STD ... all defaults settings
+;;VEG ... vegetation preference
+;;SOI ... bare soil preference
+vX.Y.Z;Processing baseline version. Processing baseline comprise a certain set of software and auxiliary data. ;The version of the processing system, in the format X.Y.Z
+DDD;Order number;Order number: Arbitrary 3 digits identifier. A unique number assigned for every product
+ext;FileExtension;Depending on the file format it can be nc or tif

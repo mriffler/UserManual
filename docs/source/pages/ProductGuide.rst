@@ -4,6 +4,8 @@
 Product Guide
 #############
 
+.. _general:
+
 General
 *******
 All Mosaic Hub products provide 22 raster bands selectable by the user
@@ -15,8 +17,6 @@ raster bands comprise:
 - 4 sun/view geometry bands
 - 2 validation bands
 - 1 quality band
-
-Additionally two raster bands comprising latitude/longitude information are provided with each product.
 
 The following chapter give more detailed information for the available bands.
 
@@ -125,17 +125,21 @@ All Mosaic Hub raster products are provided in uniform resolution. Three differe
 - 20m
 - 60m
 
+.. _crs:
 
-
-Coordinate Reference Systems
-****************************
+Coordinate Reference Systems (CRS)
+**********************************
 The Mosaic Hub raster products are provided either projected in UTM(WGS84) or unprojected WGS84
 
+.. _utm:
+
 UTM
-====
+===
 Universal Transverse Mercator (UTM) conformal projection is not a single map projection.
 The system instead divides the Earth into sixty zones, each being a six-degree band of longitude,
 and uses a secant transverse Mercator projection in each zone. WGS84 is used as ellipsoid for UTM.
+
+.. _wgs:
 
 WGS84
 =====
@@ -151,41 +155,174 @@ The Mosaic Hub raster products are available in three different file formats:
 - Jpeg2000
 - NetCDF
 
-GeoTiff / Jpeg2000
-==================
+File format properties are described in the following chapter. Where needed a
+distinction is made between the different formats.
 
-General
+File Structure
+==============
+File structures are mainly identical for GeoTiff,
+Jpeg2000 and NetCDF. Therefore, no explizit chapters for the single formats
+exist. Differences are indicated within the single chapter.
+
+.. _folders:
+
+Folders
 -------
+The Mosaic Hub products are organized in a folder structure. The product's structure
+consists of a base folder, containing all data of one order, a sub/tile folder
+containing one or multiple folders, holding single product or tiles if a tiling is needed.
+Within these sub folders the actual data is stored.
 
-Naming Convention and File Structure
-------------------------------------
+Structure example for GeoTiff format:
+
+.. [Base folder]
+   [Sub/tile folder]
+      raster.tif
+
+..      ...
+
+..      raster.tif
+
+..      metadata.xml
+   [Sub/tile folder]
+      raster.tif
+
+..      ...
+
+..      raster.tif
+
+..      metadata.xml
+
+.. _fileStructExample:
+.. figure:: images/FileStructure.png
+   :name: FileStructureExample
+   :scale: 75%
+   :alt: File structure example
+   :align: center
+
+   File structure example example
+
+.. _files:
+
+Files
+-----
+Depending on the format the number of files varies.
+
+GeoTiff/Jpeg2000:
+    The product is delivered in 23 separate files. 22 GeoTiff/Jpeg2000 files
+    contain the raster bands described in the :ref:`'General' <general>` section, and one JSON file containing
+
+NetCDF:
+    The product is delivered in 2 seperate files. One NetCDF file containing
+    all raster bands
+
+.. _tiling:
+
+Tiling
+------
+The product is split into the area of original Sentinel-2 granules.
+For a detailed description of the Sentinel-2 tiling scheme please
+visit the `official website`__. A tiling of the products is only done
+if :ref:`UTM <utm>` projection is chosen as :ref:`CRS <crs>` and the
+chosen area exceeds a certain size.
+
+ .. _s2_tiling: https://sentinel.esa.int/web/sentinel/missions/sentinel-2/data-products
+
+__ s2_tiling_
+|
+
+.. _naming_conventions:
+
+Naming conventions
+==================
+Naming conventions are mainly identical for GeoTiff,
+Jpeg2000 and NetCDF. Therefore, no explicit chapters for the single formats
+exist. Differences are indicated within the single chapter
+
+The product name (folders & files) contains key information on its content. Product names
+support easy identification of relevant files and support meaningful sorting.
+The Mosaic Hub product names are constructed according to the following naming convention:
+
+Base folder
+-----------
+
+S2GM_{TemporalIdentifierSpatialIdentifier}_{PeriodStart}_{PeriodEnd}_{OrderName}_[ConfIndicator] _v{Version}_[{uniqueID}].{FileExtension}
+
+In short, and with the correct length indicated by placeholders:
+
+S2GM_{TSS}_{SSSSSSSS}_{EEEEEEEE}_{AA...AA}_[CCC]_v{X.Y.Z}_[DDD}.{ext}
+
+Two examples:
+    S2GM_Q10_20171001_20171230_MyPersonalRequest_STD__v1.0.0_385.tiff
+    S2GM_M60_20170401_20170430_SPAIN_STD__v1.0.0_420.netCDF
+
+.. _base_folder_table:
+
+.. csv-table:: Base folder naming convention
+   :file: csv/base_folder_naming_convention.csv
+   :delim: ;
+   :widths: 10, 60, 30
+   :header-rows: 1
+
+|
+
+
+Sub folder
+----------
+
+The sub folder naming differs for tiled and none-tiled products (see :ref:`tiling <tiling>`).
+
+*None-tiled products*: The sub-folder name is equal to your order name (see {AA...AA} in :ref:`base folder table <base_folder_table>`)
+
+*Tiled products*: The sub folder names are equal to Sentinel-2 granule names (see :ref:`tiling <tiling>`)
+
+Files
+-----
+The file naming differs for GeoTiff/Jpeg2000 and NetCDF due to the structuring of the files.
+
+    **GeoTiff/Jpeg2000:**
+
+    In GeoTiff and Jpeg2000 format all raster bands are stored in separate files (see :ref:`Files <files>`)
+
+    {RasterBandIdentifier}_{TemporalIdentifierSpatialIdentifier}_{PeriodStart}_{OrderName}.{FileExtension}
+
+    In short, and with the correct length  indicated by placeholders (if not variable; variability indicated by ...):
+
+    {BB...BB}_{TSS}_{SSSSSSSS}_{AA...AA}.{ext}
+
+    *Example: B04_M60_20170701_Northern_Germany.jp2*
+
+    .. _file_naming_tif_jpg_table:
+
+    .. csv-table:: File naming convention GeoTiff/Jpeg200
+       :file: csv/file_naming_convention_tif_jpg.csv
+       :delim: ;
+       :widths: 9, 32, 59
+       :header-rows: 1
+
+    |
+
+    **NetCDF**
+
+    In NetCDF format
 
 Data Content
-------------
+============
 
-GeoTiff / Jpeg2000 Data Files
-+++++++++++++++++++++++++++++
-
-Metadata
-++++++++
+GeoTiff / Jpeg2000
+------------------
 
 NetCDF
-======
-
-General
--------
-
-Naming Convention and File Structure
-------------------------------------
-
-Data Content
-------------
-
-NetCDf Data File
-++++++++++++++++
+------
 
 Metadata
-++++++++
+========
+
+GeoTiff / Jpeg2000
+------------------
+
+NetCDF
+------
 
 INSPIRE
 *******
