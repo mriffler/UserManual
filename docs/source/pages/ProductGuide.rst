@@ -4,10 +4,8 @@
 Product Guide
 #############
 
-.. _general:
-
-General
-*******
+Data
+****
 All Mosaic Hub products provide 22 raster bands selectable by the user
 during the order process (see section :ref:`Order Panel <orderPanel>`). Available
 raster bands comprise:
@@ -272,7 +270,7 @@ Sub folder
 
 The sub folder naming differs for tiled and none-tiled products (see :ref:`tiling <tiling>`).
 
-*None-tiled products*: The sub-folder name is equal to your order name (see {AA...AA} in :ref:`base folder table <base_folder_table>`)
+*Non-tiled products*: The sub-folder name is equal to your order name (see {AA...AA} in :ref:`base folder table <base_folder_table>`)
 
 *Tiled products*: The sub folder names are equal to Sentinel-2 granule names (see :ref:`tiling <tiling>`)
 
@@ -333,28 +331,16 @@ In short, and with the correct length  indicated by placeholders (if not variabl
 
 The metadata file is prefixed with 'metadata/_'
 
-Data Content
+Metadata
 ============
 
 GeoTiff / Jpeg2000
 ------------------
+json + xml
 
 NetCDF
 ------
-
-Metadata
-========
-
-GeoTiff / Jpeg2000
-------------------
-
-NetCDF
-------
-
-INSPIRE
-*******
-
-
+NetCDF internal + xml
 
 Software
 ********
