@@ -14,8 +14,7 @@
 /* -- page layout ----------------------------------------------------------- */
 
 body {
-    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva',
-                 'Verdana', sans-serif;
+    font-family: 'Verdana', 'Calibri', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', sans-serif;
     font-size: 14px;
     letter-spacing: -0.01em;
     line-height: 150%;
@@ -24,8 +23,8 @@ body {
     background-image: url(background_b01.png);
     color: black;
     padding: 0;
-    border-right: 1px solid #00A000;
-    border-left: 1px solid #00A000;
+    border-right: 1px solid #53B252;
+    border-left: 1px solid #53B252;
 
     margin: 0px 40px 0px 40px;
 }
@@ -106,8 +105,8 @@ div.sphinxsidebar h3, div.sphinxsidebar h4 {
     font-size: 1em;
     padding: 0.1em 0 0.1em 0.5em;
     color: white;
-    border: 1px solid #00A000;
-    background-color: #00A000;
+    border: 1px solid #53B252;
+    background-color: #53B252;
 }
 
 div.sphinxsidebar h3 a {
@@ -126,7 +125,7 @@ div.sphinxsidebar ul ul {
 }
 
 div.sphinxsidebar input {
-    border: 1px solid #00A000;
+    border: 1px solid #53B252;
 }
 
 div.footer {
@@ -136,14 +135,14 @@ div.footer {
     clear: both;
     font-size: 0.8em;
     text-align: right;
-    border-bottom: 1px solid #00A000;
+    border-bottom: 1px solid #53B252;
 
     -moz-box-shadow: 2px 2px 5px #000;
     -webkit-box-shadow: 2px 2px 5px #000;
 }
 
 div.footer a {
-    color: #00A000;
+    color: #53B252;
     text-decoration: underline;
 }
 
@@ -154,12 +153,12 @@ p {
 }
 
 a {
-    color: #00A000;
+    color: #000000;
     text-decoration: none;
 }
 
 a:hover {
-    color: #00A000;
+    color: #53B252;
     text-decoration: underline;
 }
 
@@ -168,7 +167,7 @@ div.body a {
 }
 
 h1, h2, h3 {
-    color: #00A000;
+    color: #000000;
 }
 
 h1 {
@@ -181,7 +180,7 @@ h2 {
     margin: 1.3em 0 0.2em 0;
     font-size: 1.35em;
     padding-bottom: .5em;
-    border-bottom: 1px solid #00A000;
+    border-bottom: 1px solid #000000;
 }
 
 h3 {

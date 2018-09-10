@@ -12,7 +12,7 @@ a scene classification layer (SCL) providing information on cloudiness, snow and
 as well as aerosol and water vapour used during the atmospheric correction process.
 The S2GM mosaicking algorithm has to rely on this information for its processing.
 The S2GM processing chain to calculate the mosaic image products is fully automated and is based on a modular design -
-see see :numref:`processingChainMainSteps`. The three following main modules form the basis of the chain.
+see :numref:`processingChainMainSteps`. The three following main modules form the basis of the chain.
 
 1.	Quality assurance/ quality check (QA/QC) of the input products
 2.	Composite/Mosaic algorithm
