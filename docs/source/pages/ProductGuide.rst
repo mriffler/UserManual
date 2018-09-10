@@ -595,6 +595,7 @@ For this example we have chosen R/G/B = 4/3/2. Afterwards your selection will be
    QGIS example: RGB image bands 4/3/2 in QGIS
 
 **NetCDF**
+
 For NetCDF format there are small differences. Again, you can either use drag & drop or "Add Raster Layer" as described above.
 After you have selected or dropped your NetCDF file a :ref:`new window opens where you can select the raster layer <qgisRGBNine>` of the
 NetCDF you like to add. Afterwards you have to :ref:`indicate the CRS <qgisRGBTen>` you are using. All selected raster
