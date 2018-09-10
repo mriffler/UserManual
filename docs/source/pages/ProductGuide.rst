@@ -594,6 +594,50 @@ For this example we have chosen R/G/B = 4/3/2. Afterwards your selection will be
 
    QGIS example: RGB image bands 4/3/2 in QGIS
 
+**NetCDF**
+For NetCDF format there are small differences. Again, you can either use drag & drop or "Add Raster Layer" as described above.
+After you have selected or dropped your NetCDF file a :ref:`new window opens where you can select the raster layer <qgisRGBNine>` of the
+NetCDF you like to add. Afterwards you have to :ref:`indicate the CRS <qgisRGBTen>` you are using. All selected raster
+bands will be :ref:`added to QGIS <qgisRGBEleven>`. Now you can proceed the same way as described above. Either you merge
+the data or build a VRT. Either way, the added files will show up in the :ref:`file selection window <qgisRGBTwelve>`.
+Therefore no files have to be added, just simply selected. All remaining
+steps are the same as for GeoTiff/Jpeg2000
+
+.. _qgisRGBNine:
+.. figure:: images/QGIS_RGB9.png
+   :name: qgisRGBNineExample
+   :scale: 75%
+   :alt: QGIS open example
+   :align: center
+
+   QGIS example: Add NetCDF bands in QGIS
+
+.. _qgisRGBTen:
+.. figure:: images/QGIS_RGB10.png
+   :name: qgisRGBTenExample
+   :scale: 75%
+   :alt: QGIS open example
+   :align: center
+
+   QGIS example: Select CRS
+
+.. _qgisRGBEleven:
+.. figure:: images/QGIS_RGB11.png
+   :name: qgisRGBElevenExample
+   :scale: 75%
+   :alt: QGIS open example
+   :align: center
+
+   QGIS example: All NetCDF raster bands are added to QGIS
+
+.. _qgisRGBTwelve:
+.. figure:: images/QGIS_RGB12.png
+   :name: qgisRGBTwelveExample
+   :scale: 75%
+   :alt: QGIS open example
+   :align: center
+
+   QGIS example: Select files
 
 Time Series
 ***********
@@ -603,3 +647,4 @@ The result of those extractions can be exported and downloaded. For a full descr
 
 File Format
 ===========
+The time series extracts are provided in CSV format.
