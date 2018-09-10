@@ -367,15 +367,232 @@ Sentinel Toolboxes. It can be downloaded from http://step.esa.int/main/download/
 
 __ SnapWeb_
 
+The simplest way of directly using the Mosaic Hub products is by using SNAP.
+In SNAP you can simply select the .json file in the open file dialogue box or drag and drop
+the .json file on the "Product Explorer" window. There is now difference if the product is
+delivered in GeoTiff, Jpeg2000 or NetCDF format.
+
+Open product:
+
+- Select "File" -> "Open Products..." -> select ".json" file (see figure :ref:`4.4 <snapFileOpenOneExample>` and :ref:`4.5 <snapFileOpenTwoExample>`) or
+
+- Drag & drop .json file on the "Product Explorer" part in SNAP (see figure 4.6).
+
+
+.. _snapFileOpenOneExample:
+.. figure:: images/SNAP_open1.png
+   :name: SnapOpenOneExample
+   :scale: 75%
+   :alt: SNAP open example
+   :align: center
+
+   SNAP example: open with file explorer
+
+
+.. _snapFileOpenTwoExample:
+.. figure:: images/SNAP_open2.png
+   :name: SnapOpenTwoExample
+   :scale: 75%
+   :alt: SNAP open example
+   :align: center
+
+   SNAP example: select .json file
+
+.. _snapFileDragDropExample:
+.. figure:: images/SNAP_dragdrop.png
+   :name: SnapDragDropExample
+   :scale: 75%
+   :alt: SNAP open example
+   :align: center
+
+   SNAP example: open via drag & drop
+
+Afterwards the product will be shown in the "Product Explorer" window. Now you can investigate the content of the
+product by clicking on the "+" signs. To view the product right-click on the product name in the "Product Explorer" and
+select :ref:`"Open RGB Image Window" <snapRGBrightClick>`. In the :ref:`"Select RGB-Image Channels" <snapRGBprofile>` window choose a band
+combination that fits your needs. In this example the combination of Bands 4, 3, and 2 were used for RGB.
+
+.. _snapRGBrightClick:
+.. figure:: images/SNAP_openRGB.png
+   :name: SnapOpenRGBOne
+   :scale: 75%
+   :alt: SNAP open example
+   :align: center
+
+   SNAP example: open RGB view
+
+.. _snapRGBprofile:
+.. figure:: images/SNAP_openRGB2.png
+   :name: SnapOpenRGBTwo
+   :scale: 75%
+   :alt: SNAP open example
+   :align: center
+
+   SNAP example: select RGB profile (e.g. 4/3/2)
+
+The selected RGB combination will be shown in a :ref:`new window <snapRGB>`.
+
+.. _snapRGB:
+.. figure:: images/SNAP_RGB.png
+   :name: SnapRGBImage
+   :scale: 50%
+   :alt: SNAP open example
+   :align: center
+
+   SNAP example: RGB of bands 4/3/2
 
 
 
 QGIS
 ====
+For QGIS users it is a bit more complicated to visually inspect the product.
 
-ArcGIS
-======
+**GeoTiff/Jpeg2000**
 
+You have two options of inspecting the data in QGIS. You can either load all single raster bands and inspect them as
+grey scale images, or you can create a raster stack and inspect an RGB image. For the first option you can either:
+
+- :ref:`Drag & drop <qgisFileOpenFour>` the single bands (.tiff/.jp2) directly on the "Layers" window or
+
+- Use the :ref:`"Add Raster Layer" <qgisFileOpenOne>` button and :ref:`select the single files <qgisFileOpenTwo>` and :ref:`add them <qgisFileOpenThree>` to QGIS.
+
+.. _qgisFileOpenFour:
+.. figure:: images/QGIS_open4.png
+   :name: qgisOpenFour
+   :scale: 75%
+   :alt: QGIS open example
+   :align: center
+
+   QGIS example: drag & drop files
+
+.. _qgisFileOpenOne:
+.. figure:: images/QGIS_open1.png
+   :name: qgisOpenOne
+   :scale: 75%
+   :alt: QGIS open example
+   :align: center
+
+   QGIS example: open with "Add Raster Layer"
+
+.. _qgisFileOpenTwo:
+.. figure:: images/QGIS_open2.png
+   :name: qgisOpenTwo
+   :scale: 75%
+   :alt: QGIS open example
+   :align: center
+
+   QGIS example: select .jp2/.tiff files
+
+.. _qgisFileOpenThree:
+.. figure:: images/QGIS_open3.png
+   :name: qgisOpenThree
+   :scale: 75%
+   :alt: QGIS open example
+   :align: center
+
+   QGIS example: load files into QGIS
+
+
+If you use these two options you will end up with :ref:`single raster bands in QGIS <qgisFileOpenGrey>` which you can inspect es greyscale images.
+
+.. _qgisFileOpenGrey:
+.. figure:: images/QGIS_grey.png
+   :name: qgisOpenGrey
+   :scale: 50%
+   :alt: QGIS open example
+   :align: center
+
+   QGIS example: single raster files as grey scale images
+
+If you want to create a raster stack from which you can create an RGB view you first have to stack the single files.
+For this again you have two options. Either you merge the data into a single raster stack or you create a virtual raster called VRT.
+
+For the first option you must go to :ref:`"Raster" -> "Miscellaneous" -> "Merge..." <qgisRGBOne>`.
+Click :ref:`Add files(s) <qgisRGBTwo>` and select the files you like to stack. Then click :ref:`OK <qgisRGBThree>`. Make sure you check the
+:ref:`"Place each input file into a seperate band" <qgisRGBFive>` check-box. Click the [...] button and select
+:ref:`Save to "File..." <qgisRGBFour>´ Depending on your preferences you can
+choose between different output formats like GeoTiff. If you choose GeoTiff, it might be a good idea to build image
+pyramids for faster display later on.
+
+.. _qgisRGBOne:
+.. figure:: images/QGIS_RGB1.png
+   :name: qgisRGBOneExample
+   :scale: 75%
+   :alt: QGIS open example
+   :align: center
+
+   QGIS example: Select "Merge..." tool
+
+.. _qgisRGBTwo:
+.. figure:: images/QGIS_RGB2.png
+   :name: qgisRGBTwoExample
+   :scale: 75%
+   :alt: QGIS open example
+   :align: center
+
+   QGIS example: Select files
+
+.. _qgisRGBThree:
+.. figure:: images/QGIS_RGB3.png
+   :name: qgisRGBThreeExample
+   :scale: 75%
+   :alt: QGIS open example
+   :align: center
+
+   QGIS example: Add files - OK
+
+.. _qgisRGBFive:
+.. figure:: images/QGIS_RGB5.png
+   :name: qgisRGBFiveExample
+   :scale: 75%
+   :alt: QGIS open example
+   :align: center
+
+   QGIS example: Check tick-box for file separation
+
+.. _qgisRGBFour:
+.. figure:: images/QGIS_RGB4.png
+   :name: qgisRGBFourExample
+   :scale: 75%
+   :alt: QGIS open example
+   :align: center
+
+   QGIS example: Choose output format
+
+If you decide to create a virtual raster stack (VRT), you must go to :ref:`"Raster" -> "Miscellaneous" -> "Build Virtual Raster..." <qgisRGBSix>`.
+The steps are the same as for "Merge..". again make sure to check "separate".
+The generated product is very small, as it is only a reference to the real data, but it will be slow for the display of bigger images.
+
+.. _qgisRGBSix:
+.. figure:: images/QGIS_RGB6.png
+   :name: qgisRGBSixExample
+   :scale: 75%
+   :alt: QGIS open example
+   :align: center
+
+   QGIS example: Select "Build Virtual Raster..." tool
+
+Once one of the two processes is finished the resulting layer stack will be loaded into QGIS.
+Now you can open the :ref:`layer's property window and select the bands you like to view as an RGB <qgisRGBSeven>`.
+For this example we have chosen R/G/B = 4/3/2. Afterwards your selection will be :ref:`displayed in QGIS <qgisRGBEight>`.
+
+.. _qgisRGBSeven:
+.. figure:: images/QGIS_RGB7.png
+   :name: qgisRGBSevenExample
+   :scale: 75%
+   :alt: QGIS open example
+   :align: center
+
+   QGIS example: Select band combination in properties window.
+
+.. _qgisRGBEight:
+.. figure:: images/QGIS_RGB8.png
+   :name: qgisRGBEightExample
+   :scale: 50%
+   :alt: QGIS open example
+   :align: center
+
+   QGIS example: RGB image bands 4/3/2 in QGIS
 
 
 Time Series
