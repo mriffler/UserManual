@@ -4,6 +4,10 @@
 Product Guide
 #############
 
+The content of Mosaic Hub products is variable and dependent on the selection done by the user during the order process.
+
+.. _data:
+
 Data
 ****
 All Mosaic Hub products provide 22 raster bands selectable by the user
@@ -208,7 +212,7 @@ Depending on the format the number of files varies.
 
 GeoTiff/Jpeg2000:
     The product is delivered in 23 separate files. 22 GeoTiff/Jpeg2000 files
-    contain the raster bands described in the :ref:`'General' <general>` section, and one JSON file containing
+    contain the raster bands described in the :ref:`'Data' <data>` section, and one JSON file containing
 
 NetCDF:
     The product is delivered in 2 seperate files. One NetCDF file containing
@@ -227,7 +231,9 @@ chosen area exceeds a certain size.
  .. _s2_tiling: https://sentinel.esa.int/web/sentinel/missions/sentinel-2/data-products
 
 __ s2_tiling_
+
 |
+
 
 .. _naming_conventions:
 
