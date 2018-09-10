@@ -5,6 +5,7 @@ Product Guide
 #############
 
 The content of Mosaic Hub products is variable and dependent on the selection done by the user during the order process.
+The Product Guide describes all available content.
 
 .. _data:
 
@@ -348,23 +349,40 @@ NetCDF
 ------
 NetCDF internal + xml
 
+.. _software:
+
 Software
 ********
 
+In this section you will get a brief introduction how to open Mosaic Hub products in three different software packages.
+
+.. _snap:
+
 SNAP
+====
+`SNAP`__ stands for Sentinel Aplication Platform and is the official ESA software and common architecture for all
+Sentinel Toolboxes. It can be downloaded from http://step.esa.int/main/download/
+
+.. _SnapWeb: http://step.esa.int/main/toolboxes/snap/
+
+__ SnapWeb_
+
+
+
+
+QGIS
 ====
 
 ArcGIS
 ======
 
-QGIS
-====
-
-
 
 
 Time Series
 ***********
+
+Besides Raster products the Mosaic Hub provides the functionality of extracting time series of a single pixel or 3x3 pixel windows.
+The result of those extractions can be exported and downloaded. For a full description of this functionality please see :ref:`TimeSeries<time_series>`
 
 File Format
 ===========
