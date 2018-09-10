@@ -203,7 +203,7 @@ Structure example for GeoTiff format:
    :alt: File structure example
    :align: center
 
-   File structure example example
+   File structure example
 
 .. _files:
 
