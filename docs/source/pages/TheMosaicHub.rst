@@ -27,6 +27,7 @@ mail address. Click on the verification button and you will receive the confirma
    Mosaic Hub Registration
 
 
+.. _order:
 
 Mosaic Ordering
 ***************

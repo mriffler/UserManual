@@ -4,8 +4,8 @@
 Product Guide
 #############
 
-The content of Mosaic Hub products is variable and dependent on the selection done by the user during the order process.
-The Product Guide describes all available content.
+The content of Mosaic Hub products is variable and dependent on the selection done by the user during the :ref:`order process <order>`.
+The Product Guide describes all available contents.
 
 .. _data:
 
@@ -21,15 +21,14 @@ raster bands comprise:
 - 2 validation bands
 - 1 quality band
 
-The following chapter give more detailed information for the available bands.
+The following chapter give more detailed information on the available bands.
 
 .. _surface_reflectance_bands:
 
 Surface reflectance bands
 =========================
 The Mosaic Hub delivers products with reflectance bands chosen by the user in
-the **Band selection** section of the Mosaic Hub order panel
-(see section :ref:`Order Panel <orderPanel>`).
+the :ref:`band selection <orderPanel>` section of the Mosaic Hub order panel.
 The surface reflectance is computed using the “Sentinel-2 Atmospheric Correction”
 (L2A_AtmCorr) algorithm and based on reference radiative transfer code.
 Look Up Tables (LUTs) are based on LibRadtran.
@@ -135,7 +134,7 @@ All Mosaic Hub raster products are provided in uniform resolution. Three differe
 
 Coordinate Reference Systems (CRS)
 **********************************
-The Mosaic Hub raster products are provided either projected in UTM(WGS84) or unprojected WGS84
+The Mosaic Hub raster products are provided either projected in UTM(WGS84) or unprojected using WGS84
 
 .. _utm:
 
@@ -216,11 +215,12 @@ Depending on the format the number of files varies.
 
 GeoTiff/Jpeg2000:
     The product is delivered in 23 separate files. 22 GeoTiff/Jpeg2000 files
-    contain the raster bands described in the :ref:`'Data' <data>` section, and one JSON file containing
+    contain the raster bands described in the :ref:`'Data' <data>` section, one JSON file containing metadata
+    information, and one XML file also containing INSPIRE conform metadata information.
 
 NetCDF:
-    The product is delivered in 2 seperate files. One NetCDF file containing
-    all raster bands
+    The product is delivered in 2 separate files. One NetCDF file containing all raster bands, one JSON file containing
+    metadata information, and one XML file also containing INSPIRE conform metadata information.
 
 .. _tiling:
 
@@ -346,11 +346,11 @@ Metadata
 
 GeoTiff / Jpeg2000
 ------------------
-json + xml
+JSON + XML
 
 NetCDF
 ------
-NetCDF internal + xml
+NetCDF internal + JSON + XML
 
 .. todo::
    Inspire is not yet explained.
@@ -360,7 +360,8 @@ NetCDF internal + xml
 Software
 ********
 
-In this section you will get a brief introduction how to open Mosaic Hub products in three different software packages.
+In this section you will get a brief introduction how to open Mosaic Hub products in SNAP or QGIS. The introduction is
+limited to the two most common open source platforms used for Sentinel-2 data.
 
 .. _snap:
 
@@ -375,7 +376,7 @@ __ SnapWeb_
 
 The simplest way of directly using the Mosaic Hub products is by using SNAP.
 In SNAP you can simply select the .json file in the open file dialogue box or drag and drop
-the .json file on the "Product Explorer" window. There is now difference if the product is
+the .json file on the "Product Explorer" window. There is no difference if the product is
 delivered in GeoTiff, Jpeg2000 or NetCDF format.
 
 .. todo::
@@ -513,13 +514,13 @@ If you use these two options you will end up with :ref:`single raster bands in Q
 
    QGIS example: single raster files as grey scale images
 
-If you want to create a raster stack from which you can create an RGB view you first have to stack the single files.
+If you want to create a raster stack from which you can create an RGB view, you first have to stack the single files.
 For this again you have two options. Either you merge the data into a single raster stack or you create a virtual raster called VRT.
 
 For the first option you must go to :ref:`"Raster" -> "Miscellaneous" -> "Merge..." <qgisRGBOne>`.
 Click :ref:`Add files(s) <qgisRGBTwo>` and select the files you like to stack. Then click :ref:`OK <qgisRGBThree>`. Make sure you check the
 :ref:`"Place each input file into a seperate band" <qgisRGBFive>` check-box. Click the [...] button and select
-:ref:`Save to "File..." <qgisRGBFour>´ Depending on your preferences you can
+:ref:`Save to "File..." <qgisRGBFour>` Depending on your preferences you can
 choose between different output formats like GeoTiff. If you choose GeoTiff, it might be a good idea to build image
 pyramids for faster display later on.
 
