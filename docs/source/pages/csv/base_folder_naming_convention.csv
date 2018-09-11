@@ -15,4 +15,4 @@ CCC;Configuration indicator. Identifier for the different pre-defined configurat
 ;;SOI ... bare soil preference
 vX.Y.Z;Processing baseline version. Processing baseline comprise a certain set of software and auxiliary data. ;The version of the processing system, in the format X.Y.Z
 DDD;Order number;Order number: Arbitrary 3 digits identifier. A unique number assigned for every product
-ext;FileExtension;Depending on the file format it can be nc or tif
+ext;FileExtension;Depending on the file format it can be nc, tiff or jp2
