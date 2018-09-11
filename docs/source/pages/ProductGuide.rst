@@ -34,6 +34,9 @@ The surface reflectance is computed using the “Sentinel-2 Atmospheric Correcti
 (L2A_AtmCorr) algorithm and based on reference radiative transfer code.
 Look Up Tables (LUTs) are based on LibRadtran.
 
+.. todo::
+   Shouldn't we refer to Sen2Cor here instead of L2A_AtmCorr? Sen2Cor is referenced at other location in the user manual, too.
+
 The following :ref:`table <surface_reflectance_bands_table>` lists the available bands and corresponding native
 resolutions of the Sentinel-2 L2A input products.
 
@@ -349,6 +352,9 @@ NetCDF
 ------
 NetCDF internal + xml
 
+.. todo::
+   Inspire is not yet explained.
+
 .. _software:
 
 Software
@@ -363,7 +369,7 @@ SNAP
 `SNAP`__ stands for Sentinel Aplication Platform and is the official ESA software and common architecture for all
 Sentinel Toolboxes. It can be downloaded from http://step.esa.int/main/download/
 
-.. _SnapWeb: http://step.esa.int/main/toolboxes/snap/
+.. _SnapWeb: http://step.esa.int/
 
 __ SnapWeb_
 
@@ -371,6 +377,9 @@ The simplest way of directly using the Mosaic Hub products is by using SNAP.
 In SNAP you can simply select the .json file in the open file dialogue box or drag and drop
 the .json file on the "Product Explorer" window. There is now difference if the product is
 delivered in GeoTiff, Jpeg2000 or NetCDF format.
+
+.. todo::
+   We should also explain how one can install the reader plugin necessary for the GeoTIFF and JP2 formats.
 
 Open product:
 

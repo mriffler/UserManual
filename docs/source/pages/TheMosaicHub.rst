@@ -79,6 +79,9 @@ When you launch the App, you will see a window like in :numref:`mosaicDownloader
 
 The menu of the App has menu buttons in the top; clicking on them brings up the following functionality:
 
+.. todo::
+   Replace TBD with content. Discuss with Sinergise what shall be behind the links.
+
 +------------------------+------------------+
 | Menu Button            |  Functionality   |
 +========================+==================+
@@ -123,6 +126,10 @@ Area Selection
 As depicted in :numref:`Fig. {number}: {name} <areaSelection>`, there are different options to define the area for which the mosaic product will be generated:
 
 Note that your product might be split into several tiles if it spans a large area (see also the warning displayed on :numref:`orderPanelOrder`).
+
+.. todo::
+   The shown warning does not say that the result will be split. Actually it says that the order will be reviewed. Requests are split if they are bigger then 10000 pixels. The review line is added when they are bigger then ???? pixels.
+   By which rules are the requests reviewed? This could be explained to users.
 
 * Drawing a rectangular or a polygon of arbitrary geometry on the map after selecting the corresponding icon in the menu on the upper right of the map (see :numref:`drawingTools`).
 * Uploading a kml or kmz shape file. The upload button is located on the second tab in the area selection menu of the configuration menu.
@@ -364,6 +371,9 @@ If something went wrong, you can inform the S2GM team by clicking on the envelop
 on the red cross icon. If the status of an order is finished, the download icon changes to green. When you click on it,
 the download dialog will be displayed (:numref:`mosaicDownloaderList`). You first have to select a download directory that you can change later if needed.
 Hovering the list will turn the entries from grey to black. A click on the black icon will start the download.
+
+.. todo::
+   How long will the order remain in the User Area? Add a column to show the date when it will be deleted?
 
 .. _mosaicDownloaderList:
 .. figure:: images/MosaicDownloaderList.png
