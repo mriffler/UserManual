@@ -31,6 +31,12 @@ Indices and tables
 * :ref:`search`
 
 
+Todos
+*****
+
+:ref:`Todo page<todos>`
+
+
 Playarea
 ********
 .. toctree::

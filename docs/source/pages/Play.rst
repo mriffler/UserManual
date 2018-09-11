@@ -2,9 +2,6 @@
 Playbook
 ########
 
-.. todo::
-   Please check me ASAP.
-
 .. _classificationMap:
 .. figure:: images/ClassificationMap.png
    :name: classificationMapName
@@ -42,15 +39,6 @@ This is a enhanced numbered reference :numref:`nicely numbered figure (Fig. {num
 
 See also: :numref:`Table {number} {name} <bandTable>`
 
-.. todo::
-   This needs to be done urgently
-
-
-
-All the todos
-*************
-
-.. todolist::
 
 
 Equations

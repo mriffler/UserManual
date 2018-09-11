@@ -17,3 +17,5 @@ Future Extensions
 .. important::
    Awesome new things will come!
 
+.. todo::
+   Page should be moved into pages directory
