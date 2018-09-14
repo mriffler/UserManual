@@ -7,6 +7,10 @@ Introduction
 .. todo::
    Page should be moved into pages directory
 
+.. todo::
+   Page would benefit from some images.
+
+
 
 The Sentinel-2 Global Mosaic service offers mosaic surface reflectance products derived from Sentinel-2 A and B platforms.
 Input to the processing are the Level 2A products provided by the Copernicus Ground Segment, i.e. ESA Sentinel-2 core products.

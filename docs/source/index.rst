@@ -7,6 +7,9 @@
 Welcome to the S2GM User Manual!
 ################################
 
+.. todo::
+   Add logos and references to Copernicus, the European Commission and other necessary organisations.
+
 
 Table of Contents
 *****************
