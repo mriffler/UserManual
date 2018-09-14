@@ -131,6 +131,7 @@ Note that your product might be split into several tiles if it spans a large are
 .. todo::
    The shown warning does not say that the result will be split. Actually it says that the order will be reviewed. Requests are split if they are bigger then 10000 pixels. The review line is added when they are bigger then ???? pixels.
    By which rules are the requests reviewed? This could be explained to users.
+   See: https://git.sinergise.com/s2gm/s2gm-hub/issues/62
 
 * Drawing a rectangular or a polygon of arbitrary geometry on the map after selecting the corresponding icon in the menu on the upper right of the map (see :numref:`drawingTools`).
 * Uploading a kml or kmz shape file. The upload button is located on the second tab in the area selection menu of the configuration menu.
@@ -375,6 +376,7 @@ Hovering the list will turn the entries from grey to black. A click on the black
 
 .. todo::
    How long will the order remain in the User Area? Add a column to show the date when it will be deleted?
+   That's the corresponding issue: https://git.sinergise.com/s2gm/s2gm-hub/issues/62
 
 .. _mosaicDownloaderList:
 .. figure:: images/MosaicDownloaderList.png
