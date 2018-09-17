@@ -56,7 +56,7 @@ div.related {
 }
 
 div.related ul {
-    background-color: #00A000;
+    background-color: #99cc33;
     height: 100%;
     overflow: hidden;
     border-top: 1px solid #ddd;
@@ -130,7 +130,7 @@ div.sphinxsidebar input {
 
 div.footer {
     background-color: white;
-    color: #00A000;
+    color: #99cc33;
     padding: 3px 8px 3px 0;
     clear: both;
     font-size: 0.8em;
