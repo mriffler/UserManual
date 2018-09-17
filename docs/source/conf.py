@@ -109,7 +109,8 @@ html_static_path = ['_static']
 #
 # html_sidebars = {}
 
-html_logo = '_static/S2GMHub_Logo.png'
+html_logo = '_static/insitu-logo-land.svg'
+# html_logo = '_static/S2GMHub_Logo.png'
 html_favicon = '_static/S2GMHub.ico'
 
 # -- Options for HTMLHelp output ---------------------------------------------

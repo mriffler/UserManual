@@ -23,8 +23,8 @@ body {
     background-image: url(background_b01.png);
     color: black;
     padding: 0;
-    border-right: 1px solid #99cc33;
-    border-left: 1px solid #99cc33;
+    border-right: 1px solid #B0BF27;
+    border-left: 1px solid #B0BF27;
 
     margin: 0px 40px 0px 40px;
 }
@@ -56,7 +56,7 @@ div.related {
 }
 
 div.related ul {
-    background-color: #99cc33;
+    background-color: #B0BF27;
     height: 100%;
     overflow: hidden;
     border-top: 1px solid #ddd;
@@ -105,8 +105,8 @@ div.sphinxsidebar h3, div.sphinxsidebar h4 {
     font-size: 1em;
     padding: 0.1em 0 0.1em 0.5em;
     color: white;
-    border: 1px solid #99cc33;
-    background-color: #99cc33;
+    border: 1px solid #B0BF27;
+    background-color: #B0BF27;
 }
 
 div.sphinxsidebar h3 a {
@@ -125,24 +125,24 @@ div.sphinxsidebar ul ul {
 }
 
 div.sphinxsidebar input {
-    border: 1px solid #99cc33;
+    border: 1px solid #B0BF27;
 }
 
 div.footer {
     background-color: white;
-    color: #99cc33;
+    color: #B0BF27;
     padding: 3px 8px 3px 0;
     clear: both;
     font-size: 0.8em;
     text-align: right;
-    border-bottom: 1px solid #99cc33;
+    border-bottom: 1px solid #B0BF27;
 
     -moz-box-shadow: 2px 2px 5px #000;
     -webkit-box-shadow: 2px 2px 5px #000;
 }
 
 div.footer a {
-    color: #99cc33;
+    color: #B0BF27;
     text-decoration: underline;
 }
 
@@ -158,7 +158,7 @@ a {
 }
 
 a:hover {
-    color: #99cc33;
+    color: #B0BF27;
     text-decoration: underline;
 }
 
@@ -434,7 +434,7 @@ th {
     color: white;
     text-align: left;
     padding-right: 5px;
-    background-color: #82A0BE;
+    background-color: #B0BF27;
 }
 
 div.literal-block-wrapper div.code-block-caption {
