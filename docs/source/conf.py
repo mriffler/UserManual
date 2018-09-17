@@ -109,7 +109,7 @@ html_static_path = ['_static']
 #
 # html_sidebars = {}
 
-html_logo = '_static/LMS_EU_Cop2.png'
+html_logo = '_static/LMS_EU_Cop3.png'
 # html_logo = '_static/insitu-logo-land.png'
 html_favicon = '_static/S2GMHub.ico'
 
