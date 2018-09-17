@@ -20,7 +20,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'S2GM User Manual'
-copyright = '2018, Brockmann Consult GmbH, Sinergise LTD., GeoVille GmbH'
+copyright = '2018, Copernicus Programme'
+# copyright = '2018, Brockmann Consult GmbH, Sinergise LTD., GeoVille GmbH'
 author = 'Brockmann Consult GmbH, Sinergise LTD., GeoVille GmbH'
 
 # The short X.Y version
