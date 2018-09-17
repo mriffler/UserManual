@@ -118,8 +118,12 @@ html_favicon = '_static/S2GMHub.ico'
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'S2GMUserManualdoc'
 
-# Change visibility of the link to the rst document file.
+
+# If true, links to the reST sources are added to the pages.
 html_show_sourcelink = False
+
+# If true, "Created using Sphinx" is shown in the HTML footer. Default is True
+html_show_sphinx = False
 
 # -- Options for LaTeX output ------------------------------------------------
 
