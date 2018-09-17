@@ -118,6 +118,8 @@ html_favicon = '_static/S2GMHub.ico'
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'S2GMUserManualdoc'
 
+# Change visibility of the link to the rst document file.
+html_show_sourcelink = False
 
 # -- Options for LaTeX output ------------------------------------------------
 
