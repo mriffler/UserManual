@@ -1,7 +1,0 @@
-.. _todos:
-
-#####
-TODOS
-#####
-
-.. todolist::

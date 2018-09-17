@@ -4,10 +4,7 @@
 Introduction
 ############
 
-.. todo::
-   Page should be moved into pages directory
-
-.. todo::
+.. .. todo::
    Page would benefit from some images.
 
 

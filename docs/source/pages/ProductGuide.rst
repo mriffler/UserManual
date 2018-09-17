@@ -33,7 +33,7 @@ The surface reflectance is computed using the “Sentinel-2 Atmospheric Correcti
 (L2A_AtmCorr) algorithm and based on reference radiative transfer code.
 Look Up Tables (LUTs) are based on LibRadtran.
 
-.. todo::
+.. .. todo::
    Shouldn't we refer to Sen2Cor here instead of L2A_AtmCorr? Sen2Cor is referenced at other location in the user manual, too.
 
 The following :ref:`table <surface_reflectance_bands_table>` lists the available bands and corresponding native
@@ -180,23 +180,6 @@ Within these sub folders the actual data is stored.
 
 Structure example for GeoTiff format:
 
-.. [Base folder]
-   [Sub/tile folder]
-      raster.tif
-
-..      ...
-
-..      raster.tif
-
-..      metadata.xml
-   [Sub/tile folder]
-      raster.tif
-
-..      ...
-
-..      raster.tif
-
-..      metadata.xml
 
 .. _fileStructExample:
 .. figure:: images/FileStructure.png
@@ -352,7 +335,7 @@ NetCDF
 ------
 NetCDF internal + JSON + XML
 
-.. todo::
+.. .. todo::
    Inspire is not yet explained.
 
 .. _software:
@@ -379,7 +362,7 @@ In SNAP you can simply select the .json file in the open file dialogue box or dr
 the .json file on the "Product Explorer" window. There is no difference if the product is
 delivered in GeoTiff, Jpeg2000 or NetCDF format.
 
-.. todo::
+.. .. todo::
    We should also explain how one can install the reader plugin necessary for the GeoTIFF and JP2 formats.
 
 Open product:

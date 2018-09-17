@@ -8,7 +8,7 @@ Input to the mosaicking process are surface reflectance values, from the so-call
 Level 2As are operationally produced by the Copernicus (ESA) ground segment.
 Currently ESA is using the Sen2Cor atmospheric correction processor for the generation of Level 2A products.
 
-.. todo::
+.. .. todo::
    We should link to Sen2Cor : http://step.esa.int/main/third-party-plugins-2/sen2cor/
 
 These Level 2A contain directional surface reflectances in 10 spectral bands (i.e. not BRDF corrected),
@@ -42,7 +42,7 @@ The basis of the main module of the processing chain (:numref:`mosaickingScheme`
 4. The compositing algorithm selects the best pixel observation in time, depending on statistical characteristics of the spectral measurements and other corresponding information like geometry; pixel identification is included in the composite regarding the chosen spatial resolution
 5. Mosaicking in the region of interest
 
-.. todo::
+.. .. todo::
    Step 1 does not fit here. Also step 2 not.
 
 The algorithm used here for the generation of Sentinel-2 mosaics selects the original pixel from the Sentinel-2 L2A product
@@ -53,10 +53,10 @@ They are briefly introduced below, and all steps are described in full detail in
 While both methods are sufficiently simple and robust for automated large-scale application,
 the quality of the resulting mosaics are sensitive to errors in Sen2Cor’s scene classification and to an optional pre-filtering of input products based on the scene classification.
 
-.. todo::
+.. .. todo::
    Link to the ATBD
 
-.. todo::
+.. .. todo::
    Shall we rephrase this? "are sensitive to errors in Sen2Cor’s scene classification"
    Maybe to "depends on the scene classification done by Sen2Cor"
 
@@ -112,6 +112,8 @@ Temporal Resampling
 ===================
 Image compositing aims at identifying the best suited observation in a given period of time on the basis of pre-defined criteria at the pixel-level or image-level [#f3]_.
 
+.. _stc:
+
 Short Term Composite - STC – adaption of the WELD algorithm regarding Sentinel-2
 --------------------------------------------------------------------------------
 The STC approach has been motivated by the Web-enabled Landsat Data –WELD method [#f4]_ method and is, like WELD,
@@ -160,7 +162,8 @@ the aggregation period, albeit at (potentially) different observation times for 
 a later spatial aggregation, in particular a down-sampling to lower resolution is not advisable,
 because of the different selected observation time in the spatial grid.
 
-
+.. .. todo::
+    change footnotes to bibliography and move to references. example: https://build-me-the-docs-please.readthedocs.io/en/latest/Using_Sphinx/UsingBibTeXCitationsInSphinx.html
 
 .. rubric:: Footnotes
 
