@@ -325,19 +325,26 @@ In short, and with the correct length  indicated by placeholders (if not variabl
 The metadata file is prefixed with 'metadata/_'
 
 Metadata
-============
+========
 
-The intention of the metadata provided with the Sentinel-2 mosaics is to deliver transparent information about the production process and useful technical details facilitating the further use of the data. Each mosaic contains metadata in terms of an XML (INSPIRE-compliant) and JSON (containing additional relevant metadata) file. In addition, data which has been ordered in the NetCDF format will have metadata included internally. The metadata can be grouped into the following categories:
+The intention of the metadata provided with the Sentinel-2 mosaics is to deliver transparent information about the
+production process and useful technical details facilitating the further use of the data. Each mosaic contains
+metadata in terms of an XML (INSPIRE-compliant) and JSON (containing additional relevant metadata) file. In addition,
+data which has been ordered in the NetCDF format will have metadata included internally. The metadata can be grouped
+into the following categories:
 
-- General metadata which contain quasi static information, such as the name of the service, contact information, etc. These are primarily emerging from INSPIRE requirements and are reported in an INSPIRE-compliant XML file.
+- General metadata which contain quasi static information, such as the name of the service, contact information, etc.
+  These are primarily emerging from INSPIRE requirements and are reported in an INSPIRE-compliant XML file.
+- Production metadata provide detailed information how the product has been produced including production date and time,
+  algorithm version, information of data lineage, and the list of Sentinel-2 input products linked with the source
+  index file (included in the JSON file).
+- Quality indicators at product level are stored in the quality metadata group (included in the JSON file).
+- In addition, variable metadata provide information on specific variables. Several items of them reveal technical
+  details (scaling and offset parameters, units, etc.) on the way the data is organised in the file, which can then be
+  interpreted by the software reading the data. (included in the JSON file).
 
-- Production metadata provide detailed information how the product has been produced including production date and time, algorithm version, information of data lineage, and the list of Sentinel-2 input products linked with the source index file. (included in the JSON file)
-
-- Quality indicators at product level are stored in the quality metadata group. (included in the JSON file)
-
-- In addition, variable metadata provide information on specific variables. Several items of them reveal technical details (scaling and offset parameters, units, etc.) on the way the data is organised in the file, which can then be interpreted by the software reading the data. (included in the JSON file)
-
-The GeoTiff / Jpeg2000 files contain the INSPIRE-compliant XML and a JSON file, while the NetCDF additionally includes the same information in the internal metadata.
+The GeoTiff / Jpeg2000 files contain the INSPIRE-compliant XML and a JSON file, while the NetCDF additionally includes
+the same information in the internal metadata.
 
 .. .. todo::
    Inspire is not yet explained.
