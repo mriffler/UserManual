@@ -83,10 +83,10 @@ pygments_style = 'sphinx'
 #
 html_theme = 'bizstyle'
 html_theme_options = {
-
+    # "sidebarwidth": "250"  # not working
+    # "nosidebar": "true",
+    # "rightsidebar ": "false",
 }
-
-#53B252
 
 
 # Theme options are theme-specific and customize the look and feel of a theme
