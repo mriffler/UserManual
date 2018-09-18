@@ -77,8 +77,8 @@ The mosaic processing is organized in two distinct modules (see :numref:`mosaick
 A threshold related to the number of valid observations is defined and applied in the processing chain for the selection of the mosaicking approach. In case of sufficient valid observations, the Medoid approach is selected otherwise the Short-Term composite is chosen. The threshold has been set to 4 for Mosaics V1.
 
 
-Input Data- Sentinel-2 L2A processed with Sen2Cor
-*************************************************
+Input Data - Sentinel-2 L2A processed with Sen2Cor
+**************************************************
 The Sentinel-2 L2A products produced with Sen2Cor and delivered by ESA via the two Copernicus hubs serve as input for the mosaic service.
 The Sen2Cor processor [#f1]_,
 which generates the L2A products has been analysed in the Atmospheric Correction Inter-Comparison Exercise (ACIX) exercise
