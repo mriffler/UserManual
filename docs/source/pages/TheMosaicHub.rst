@@ -5,7 +5,7 @@ The Mosaic Hub
 ##############
 
 The Mosaic Hub front-end is the main tool for S2GM users.
-It allows for the specification of S2GM products in terms of the spatial extent as well as the compositing period
+It allows to specify S2GM products in terms of the spatial extent as well as the compositing period
 and the format of the output products.
 The front-end guides the user through the process of this product specification.
 A registration is required before requesting and downloading mosaics.
@@ -40,7 +40,7 @@ Mosaic Hub
 The Mosaic Hub is located `here <https://webdev.sentinel-hub.com/mosaic-hub/#/>`_.
 
 However, in order to download the processed products, you will have to install the "Mosaic Downloader" App.
-In fact, this App has the same functionality like the browser instance. In order to not have to switch between browser and
+In fact, this App has the same functionality like the browser instance. In order to avoid switching between browser and
 Mosaic Downloader, it might be more convenient to work with the App from the beginning.
 
 
@@ -78,7 +78,7 @@ When you launch the App, you will see a window like in :numref:`mosaicDownloader
 
    Mosaic Downloader App Window (Sentinel view)
 
-The menu of the App has menu buttons in the top; clicking on them brings up the following functionality:
+The menu of the App has menu buttons at the top; clicking the buttons brings up the following functionality:
 
 .. .. todo::
    Replace TBD with content. Discuss with Sinergise what shall be behind the links.
@@ -108,7 +108,7 @@ The menu of the App has menu buttons in the top; clicking on them brings up the 
 +------------------------+------------------+
 
 
-The App Window is separated vertically with the dynamic map on the right and the temporal and spatial
+The App Window is split with the dynamic map on the right and the temporal and spatial
 configuration options on the left. Users can scroll and zoom into the map to focus on an area of interest.
 
 
@@ -126,7 +126,10 @@ Area Selection
 
 As depicted in :numref:`Fig. {number}: {name} <areaSelection>`, there are different options to define the area for which the mosaic product will be generated:
 
-Note that your product might be split into several tiles if it spans a large area (see also the warning displayed on :numref:`orderPanelOrder`).
+.. .. todo::
+   The shown warning does not say that the result will be split. Actually it says that the order will be reviewed. Requests are split if they are bigger then 10000 pixels. The review line is added when they are bigger then ???? pixels.
+   By which rules are the requests reviewed? This could be explained to users.
+   See: https://git.sinergise.com/s2gm/s2gm-hub/issues/62
 
 * Drawing a rectangular or a polygon of arbitrary geometry on the map after selecting the corresponding icon in the menu on the upper right of the map (see :numref:`drawingTools`).
 * Uploading a kml or kmz shape file. The upload button is located on the second tab in the area selection menu of the configuration menu.
@@ -153,6 +156,7 @@ Note that your product might be split into several tiles if it spans a large are
 
    WKT Example
 
+Note that your product might be split into several tiles if it spans a large area (see also the warning displayed on :numref:`orderPanelOrder`).
 
 Compositing Periods
 -------------------
@@ -218,10 +222,10 @@ the intermediate values in light green (see :numref:`compositing10Days`). Clicki
 
    Compositing Dialog (Day)
 
-The selection of the desired month as compositing period is straightforward (:numref:`compositingDay`).
+The selection of the desired day as compositing period is straightforward (:numref:`compositingDay`).
 
 
-Once area of interest and compositing period have been selected, users must define further properties in the Order Panel dialogue.
+Once the area of interest and compositing period have been selected, users must define further properties in the Order Panel dialogue.
 Click on "**PREPARE DOWNLOAD**" to enter the Order Panel.
 
 
@@ -283,11 +287,6 @@ As mentioned before, you are now able to review your decisions and make changes 
 
 If everything is correct, click on "**Generate**". The processing starts and after a while (depending on the size of the order)
 you will be able to download your products in the :ref:`userArea`.
-
-.. note::
-   In case your order will include more than 1 million m², product size will be very large and processing time may
-   be considerable. In this case we will get in touch with you in order identify best way of production scheduling and
-   product distribution.
 
 .. _time_series:
 
@@ -354,8 +353,8 @@ their values and metadata; clicking on pixels will display the values on a page 
 
 .. _userArea:
 
-User Area (Download)
-********************
+User Area
+*********
 
 Clicking on the button "**User Area**" in the Mosaic Hub App brings up the following dialog window (:numref:`userAreaImage`):
 
@@ -368,15 +367,14 @@ Clicking on the button "**User Area**" in the Mosaic Hub App brings up the follo
 
    User Area
 
-The User Area is the place where you can download your products after completion of the production. The user area also
-allows you to monitor and cancel your orders during production or get in touch with the s2gm team in case of issues.
-after completion of a production your products will be available for a period of 2 weeks for download.
 The User Area displays all current mosaic orders. You are able to filter for a production name to narrow your search.
 If something went wrong, you can inform the S2GM team by clicking on the envelope icon. Orders can be cancelled by clicking
-on the red cross icon. If the status of an order is finished, the download icon changes to green. When you click on it,
-the download dialog will be displayed (:numref:`mosaicDownloaderList`). You first have to select a download directory
-that you can change later if needed.
-Hovering the list will turn the entries from grey to black. A click on the black icon will start the download.
+on the red cross icon. If the status of an order is finished, the download icon changes to green. Clicking on it will bring up the download dialog (:numref:`mosaicDownloaderList`). You first have to select a download directory that you can change later if needed.
+Hovering the list will turn the entries from grey to black. A click on the black icon will finally start the download.
+
+.. .. todo::
+   How long will the order remain in the User Area? Add a column to show the date when it will be deleted?
+   That's the corresponding issue: https://git.sinergise.com/s2gm/s2gm-hub/issues/62
 
 .. _mosaicDownloaderList:
 .. figure:: images/MosaicDownloaderList.png
@@ -388,7 +386,7 @@ Hovering the list will turn the entries from grey to black. A click on the black
    Mosaic Downloader List
 
 As already mentioned above: if you selected a large area, the orders might be split into several tiles that appear in the
-download list after you clicked on the download button. To avoid unnecessary processing in the Hub,
+download list after you clicked on the download button. To avoid unnecessary processing on the Hub,
 processings and thus the downloads will proceed only after user involvement. Also, you will be notified that more tiles
 might be available (:numref:`moreTiles`). The red check mark signifies that the download isn't yet complete.
 
