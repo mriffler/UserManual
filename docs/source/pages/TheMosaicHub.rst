@@ -128,11 +128,6 @@ As depicted in :numref:`Fig. {number}: {name} <areaSelection>`, there are differ
 
 Note that your product might be split into several tiles if it spans a large area (see also the warning displayed on :numref:`orderPanelOrder`).
 
-.. .. todo::
-   The shown warning does not say that the result will be split. Actually it says that the order will be reviewed. Requests are split if they are bigger then 10000 pixels. The review line is added when they are bigger then ???? pixels.
-   By which rules are the requests reviewed? This could be explained to users.
-   See: https://git.sinergise.com/s2gm/s2gm-hub/issues/62
-
 * Drawing a rectangular or a polygon of arbitrary geometry on the map after selecting the corresponding icon in the menu on the upper right of the map (see :numref:`drawingTools`).
 * Uploading a kml or kmz shape file. The upload button is located on the second tab in the area selection menu of the configuration menu.
 * Selection of a pre-defined area, i.e. a country or a continent, in the dropdown menus of the configuration menu.
@@ -289,6 +284,11 @@ As mentioned before, you are now able to review your decisions and make changes 
 If everything is correct, click on "**Generate**". The processing starts and after a while (depending on the size of the order)
 you will be able to download your products in the :ref:`userArea`.
 
+.. note::
+   In case your order will include more than 1 million m², product size will be very large and processing time may
+   be considerable. In this case we will get in touch with you in order identify best way of production scheduling and
+   product distribution.
+
 .. _time_series:
 
 Time Series
@@ -354,8 +354,8 @@ their values and metadata; clicking on pixels will display the values on a page 
 
 .. _userArea:
 
-User Area
-*********
+User Area (Download)
+********************
 
 Clicking on the button "**User Area**" in the Mosaic Hub App brings up the following dialog window (:numref:`userAreaImage`):
 
@@ -368,15 +368,15 @@ Clicking on the button "**User Area**" in the Mosaic Hub App brings up the follo
 
    User Area
 
+The User Area is the place where you can download your products after completion of the production. The user area also
+allows you to monitor and cancel your orders during production or get in touch with the s2gm team in case of issues.
+after completion of a production your products will be available for a period of 2 weeks for download.
 The User Area displays all current mosaic orders. You are able to filter for a production name to narrow your search.
 If something went wrong, you can inform the S2GM team by clicking on the envelope icon. Orders can be cancelled by clicking
 on the red cross icon. If the status of an order is finished, the download icon changes to green. When you click on it,
-the download dialog will be displayed (:numref:`mosaicDownloaderList`). You first have to select a download directory that you can change later if needed.
+the download dialog will be displayed (:numref:`mosaicDownloaderList`). You first have to select a download directory
+that you can change later if needed.
 Hovering the list will turn the entries from grey to black. A click on the black icon will start the download.
-
-.. .. todo::
-   How long will the order remain in the User Area? Add a column to show the date when it will be deleted?
-   That's the corresponding issue: https://git.sinergise.com/s2gm/s2gm-hub/issues/62
 
 .. _mosaicDownloaderList:
 .. figure:: images/MosaicDownloaderList.png
